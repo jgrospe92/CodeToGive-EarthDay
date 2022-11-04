@@ -30,7 +30,7 @@ More info
 | as a food bank | see the rules and agreements before finalize my account | i can legitimate this organization and finalize my account | Create account if agreement is check if not don't create the account |
 | as a food bank | add my location | other users can see my location | other user should be able to see my location |
 | as a food bank | add my contact info | other users can connect with me | farmers should be able to see my contact info
-| as a food bank | add my availabilities | farmers can see when i can pick up or have the produce delivered | 
+| as a food bank | add my availabilities | farmers can see when i can pick up or have the produce delivered | farmers should be able to see the food bank availability
 | as a food bank | add my capacity / weight | i can match the farmer available capacity | It should not exceed the set capacity amount |
 | as a food bank | add maximum distance | I can only get notified by farmers near my location | i should only be notified by the nearest available farmer, it should refer me to farm that is within the set distance |
 
