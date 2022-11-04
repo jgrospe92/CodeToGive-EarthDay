@@ -16,6 +16,8 @@
 
 > Technical challenge: Earth Day Canada is looking to create a web-based platform that will help farmers share information about gleaning opportunities, connect volunteers to events, and notify nonprofits when the produce is available.
 
+# User Stories
+- [click me](UserStories.md)
 # Team :computer:
 - Jeffrey Grospe
 - Kaolin Stacey
