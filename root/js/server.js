@@ -1,5 +1,8 @@
+//In terminal cd into js then:
+//1. npm -i express mongoose body-paser
+//2. nodemon server.js to start application in localhost:3000
+//3. In broswer visit http://localhost:3000
 const express = require("express");
-
 const app = express();
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
@@ -19,7 +22,7 @@ const entryModel = {
 const model = mongoose.model("Entry", entryModel);
 
 app.get("/", function (req, res) {
-  res.sendFile("frontend/index.html", { root: "../" });
+  res.sendFile("html/index.html", { root: "../" });
 });
 app.post("/", function (req, res) {
   //Make entry
