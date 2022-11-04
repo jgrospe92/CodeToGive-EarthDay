@@ -1,4 +1,4 @@
-# CodeToGive-EarthDay :earth_americas:
+# Team 13 - CodeToGive-EarthDay- :earth_americas:
 ![CodeToGiveLogo][LOGO]
 > Welcome to Morgan Stanley’s Code to Give, a hybrid hackathon that brings technologists and nonprofits together to solve real-world problems using technology.
 
@@ -18,7 +18,7 @@
 
 # User Stories
 - [click me](UserStories.md)
-# Team :computer:
+# Team 13 :computer:
 - Jeffrey Grospe
 - Kaolin Stacey
 - Md Saqliyan Islam
