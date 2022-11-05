@@ -11,8 +11,8 @@
     <p>Please fill in this form to login</p>
 
     <form action='' method='post'>
-        <label><b>Email:</b><input type="email" name="Eamil" /></label><br>
-        <label><b>Password:</b><input type="password" name="password" /></label><br>
+        <label><b>Email:</b><input type="email" placeholder="Enter your email address" name="Eamil" /></label><br>
+        <label><b>Password:</b><input type="password" placeholder="Enter your password" name="password" /></label><br>
         <input type="submit" name="action" value="Login" /><br>
 
     </form>

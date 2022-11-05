@@ -9,4 +9,9 @@ class Main extends \app\core\Controller {
     public function gleanerLogin(){
         $this->view('Login/gleanerLogin');
     }
+
+    public function foodBankLogin(){ 
+        $this->view('Login/foodBankLogin');
+    }
+
 }
