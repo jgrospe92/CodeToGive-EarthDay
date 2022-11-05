@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="" />
+        <title>Food Bank Profile</title>
+
+        <link
+        rel="canonical"
+        href="https://getbootstrap.com/docs/5.2/examples/carousel/"
+        />
+        <!-- <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+        crossorigin="anonymous"
+        /> -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet" />
+
+    </head>       
+
+    <body>
+        <header>
+            <nav class="navbar" style="background-color: #50c2d1">
+              <div class="container">
+                <a href="https://earthday.ca">
+                  <img src="../assets/earthday_white.png" width="40" height="40" />
+                </a>
+                <a href="/">
+                  <img src="../assets/ugleen.png" width="80" height="80" />
+                </a>
+                <a href="/">
+                  <img src="../assets/ugleen_txt.png" width="40" height="40" />
+                </a>
+              </div>
+            </nav>
+          </header>
+          <br>
+          
+          <main>
+            <center><form >                
+                <fieldset class="idFieldset1">
+                    <div>
+                        <hr>
+                        <h3> <i class="bi bi-info-circle-fill"></i> Food Bank Profile</h3>
+                        <hr>
+                    </div>
+                
+                    <label>ID</label>
+                    <input class="foodbankid" type="number">
+                    <br>
+
+                    <label>Name</label>
+                    <input class="foodbankname" type="text">
+                    <br>
+
+                    
+                </fieldset>
+
+                <fieldset class="fieldset2">
+                    <br>
+                    <div>
+                        <hr>
+                        <h3><i class="bi bi-telephone-fill"></i> Contact</h3>
+                        <hr >
+                    </div>   
+
+                    <div class="contactInfoLabel">
+                        <label class="emailLabel">Email</label>
+                        <label class="phoneLabel">Phone #</label>
+                        <label class="favColourLabel">Favorite colour</label>
+                    </div>
+                    <div class="contactInfoInput">
+                        <input class="emailInput" type="email" placeholder="phucng26@example.com" required>
+                        <input class="phoneInput" type="tel" placeholder="123-456-7890" required>
+                        <input class="favColourInput" type="color">
+                    </div>
+
+                </fieldset>
+
+                <fieldset class="fieldset3">
+                    <h3> <i class="bi bi-person-lines-fill"></i> Address</h3>
+                    <hr color="lightgrey">
+
+                    <label class="streetLabel">Street</label>
+                    <input class="streetInput" type="text" placeholder="Street name" required>
+
+                    <label class="cityLabel">City</label>
+                    <input class="cityInput" type="text" placeholder="City" required>
+
+                    <div class="locationLabel">
+                        <label class="provinceLabel">Province</label>
+                        <label class="postalCodeLabel">Postal Code</label>
+                    </div>
+                    <div class="locationInput">
+                        <input class="provinceInput" type="text" placeholder="Province" required>
+                        <input class="postalCodeInput" type="text" placeholder="ABC XYZ" required>
+                    </div>
+
+                    <label class="commentLabel">Comments</label>
+                    <input class="commentInput" type="text" placeholder="Any comments?">
+
+                </fieldset>
+
+                <input class="resetBtn" type="reset">
+                <input class="submitBtn" type="submit">
+            </form></center>
+          </main>
+    </body>
+</html>
