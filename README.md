@@ -35,7 +35,7 @@
 
 # xampp and project configuration
 ## Windows
-![xampp download page](https://www.apachefriends.org/download.html)
+- [xampp download page](https://www.apachefriends.org/download.html)
 - download the latest version
 - install it using the default settings
 - you have to clone this repo to the htdocs directory
@@ -57,7 +57,7 @@
 - You're all set!
 
 ## Mac
-- ![xampp download page](https://www.apachefriends.org/download.html)
+- [xampp download page](https://www.apachefriends.org/download.html)
 - Download the latest version and install it
 - Look for the XAMPP folde in the application
 - You could also press command + space to open spotlight and type in `XAMPP`
