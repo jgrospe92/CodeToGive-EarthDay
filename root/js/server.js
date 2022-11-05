@@ -2,8 +2,11 @@
 //1. npm -i express mongoose body-paser
 //2. nodemon server.js to start application in localhost:3000
 //3. In broswer visit http://localhost:3000
+var path = require("path");
 const express = require("express");
 const app = express();
+app.use(express.static(path.join(__dirname, "../css/")));
+
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
