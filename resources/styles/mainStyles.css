@@ -1,7 +1,7 @@
 :root {
     --main-text-colour-dark: #011936;
     --header-bg:#50c2d1;
-    --main-bg: #e6e6e6;
+    --main-bg: inherit;
 }
 
 * {
