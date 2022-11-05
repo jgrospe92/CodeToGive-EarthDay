@@ -14,4 +14,8 @@ class Main extends \app\core\Controller {
         $this->view('Login/foodBankLogin');
     }
 
+    public function farmerLogin(){ 
+        $this->view('Login/farmerLogin');
+    }
+
 }
