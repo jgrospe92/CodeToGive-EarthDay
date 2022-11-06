@@ -11,4 +11,8 @@ class Gleaner extends \app\core\Controller {
      public function gleaner_profile(){
         $this->view('Gleaner/gleaner_profile');
     }
+
+     public function gleaner_profile_edit(){
+        $this->view('Gleaner/gleaner_profile_edit');
+    }
 }
