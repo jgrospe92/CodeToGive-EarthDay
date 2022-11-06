@@ -27,14 +27,44 @@
                                             </select>
                                         </div>
                                         <div class="form-group">
-                                            <label for="inputState">State</label>
+                                            <input type="text" class="form-control" id="region" placeholder="Region">
+                                        </div>  
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="municipality" placeholder="Municipality">
+                                        </div>  
+                                        <div class="form-group">
+                                            <label for="inputState">Province</label>
                                             <select id="inputState" class="form-control">
                                                 <option selected>Choose...</option>
-                                                <option>...</option>
+                                                <option>ON</option>
+                                                <option>QC</option>
+                                                <option>NS</option>
+                                                <option>NB</option>
+                                                <option>MB</option>
+                                                <option>BC</option>
+                                                <option>PE</option>
+                                                <option>SK</option>
+                                                <option>AB</option>
+                                                <option>NL</option>
+                                                <option>NT</option>
+                                                <option>YT</option>
+                                                <option>NU</option>
+
                                             </select>
-                                        </div>                        
+                                        </div>  
                                         <div class="form-group">
-                                            <input type="datetime-local" class="form-control" id="availabilities">
+                                            <label for="inputState">Maximum Distance</label>
+                                            <select id="inputState" class="form-control">
+                                                <option selected>Choose...</option>
+                                                <option>10km</option>
+                                                <option>25km</option>
+                                                <option>50km</option>
+                                                <option>75km</option>
+                                                <option>100km</option>
+                                            </select>
+                                        </div>                      
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="availabilities" placeholder="Availabilities">
                                         </div>
                                         <div class="d-flex flex-row align-items-center justify-content-between">
                                             <a href="\app\views\Login\gleaner_feed.php">Cancel</a>
