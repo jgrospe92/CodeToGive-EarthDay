@@ -62,12 +62,13 @@ form.example::after {
   width: 400px;
 }
 .feed {
+  border-top: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 20px;
-  position: fixed;
-  left: 30%;
-  top: 200px;
-  height: 70%;
+  position: absolute;
+  left: 2%;
+  /* top: 2%; */
+  height: 100%;
   scroll-behavior: auto;
   overflow: auto;
   scrollbar-base-color: rgb(0, 221, 255);
@@ -75,12 +76,13 @@ form.example::after {
   padding: 10px;
 }
 .event_card {
+  position: relative;
   padding: 24px;
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.2s;
   border-radius: 20px;
-  width: 1000px;
+  width: 790px;
   height: 160px;
   background-color: white;
   margin-right: 1em;
@@ -168,7 +170,7 @@ form.example::after {
   font-weight: bold;
   position: relative;
   color: white;
-  left: 650px;
+  left: 250px;
   top: -200px;
   padding-left: 10px;
   background-color: #50c2d1;
@@ -190,7 +192,7 @@ form.example::after {
 }
 iframe {
   position: relative;
-  top: 342px;
+  /* top: 342px; */
   left: 2.7%;
   border-radius: 20px;
 }
