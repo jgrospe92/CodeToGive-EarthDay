@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <?php
     $this->view('Layout/Head');
@@ -101,7 +102,7 @@
 
                                 </div>
                                 <div class="form-holder">
-                                <input type="text" placeholder="Website" class="form-control">
+                                    <input type="text" placeholder="Website" class="form-control">
                                 </div>
                             </div>
 
@@ -120,15 +121,23 @@
                             <div class="form-header">
                                 <h3>Farm Registration</h3>
                             </div>
-                            <p>Additional details</p>
-                            <div class="form-row">
-								<div class="form-holder w-100">
-									<textarea name="" id="" placeholder="Farm Info/Description" class="form-control" style="height: 50px;"></textarea>
-								</div>
-							</div>
                             <div class="form-row">
                                 <div class="form-holder w-100">
-                                <label class="col-sm-2 col-form-label">Profile image:<input class='form-control' type="file" name="picture" id="picture" /><label>
+                                    <textarea name="info" id="" placeholder="Farm Info/Description" class="form-control" style="height: 50px;"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder w-10">
+                                    <input type="text" placeholder="capacity(kg)" name="capacity" class="form-control">
+                                </div>
+
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder w-10"><span>Availabilities start:</span>
+                                    <input type="date" id="availabilities" data-toggle="tooltip" title="Available from" placeholder="start date" name="start_date" class="form-control">
+                                </div>
+                                <div class="form-holder w-10"><span>Availabilities end:</span>
+                                    <input type="date" placeholder="end date" name="end_date" class="form-control">
                                 </div>
                             </div>
                             <div class="checkbox-circle mt-24">
@@ -143,17 +152,17 @@
             </form>
         </div>
     </main>
-<!-- MODAL -->
-<input class="modal-state" id="modal-1" type="checkbox" />
-<div class="modal" style="z-index: 99;">
-  <label class="modal__bg" for="modal-1"></label>
-  <div class="modal__inner">
-    <label class="modal__close" for="modal-1"></label>
-    <h2>TERMS & CONDITION</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestiae, aut minima atque mollitia possimus! Nostrum eum dolorem possimus dolore atque voluptatum velit aspernatur mollitia modi nesciunt ad veritatis, tenetur quas! Sit libero quia voluptate ipsum iure dignissimos dolorem aliquam dolor mollitia facere, ratione repudiandae cumque fugiat ea deleniti sunt. Libero vel laboriosam perspiciatis praesentium ipsum nesciunt veritatis dolore? Placeat aliquam est dolor odio, cupiditate sequi deleniti culpa tenetur, tempore ipsa asperiores? At voluptatem, architecto deleniti modi velit corporis quae amet quaerat fugit possimus dolorem nisi officiis eaque porro quis eveniet praesentium doloremque, quisquam saepe voluptatibus dolore laboriosam minus. Eum.</p>
-  </div>
-</div>
-<!-- MODAL END -->
+    <!-- MODAL -->
+    <input class="modal-state" id="modal-1" type="checkbox" />
+    <div class="modal" style="z-index: 99;">
+        <label class="modal__bg" for="modal-1"></label>
+        <div class="modal__inner">
+            <label class="modal__close" for="modal-1"></label>
+            <h2>TERMS & CONDITION</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestiae, aut minima atque mollitia possimus! Nostrum eum dolorem possimus dolore atque voluptatum velit aspernatur mollitia modi nesciunt ad veritatis, tenetur quas! Sit libero quia voluptate ipsum iure dignissimos dolorem aliquam dolor mollitia facere, ratione repudiandae cumque fugiat ea deleniti sunt. Libero vel laboriosam perspiciatis praesentium ipsum nesciunt veritatis dolore? Placeat aliquam est dolor odio, cupiditate sequi deleniti culpa tenetur, tempore ipsa asperiores? At voluptatem, architecto deleniti modi velit corporis quae amet quaerat fugit possimus dolorem nisi officiis eaque porro quis eveniet praesentium doloremque, quisquam saepe voluptatibus dolore laboriosam minus. Eum.</p>
+        </div>
+    </div>
+    <!-- MODAL END -->
     <?php
     $this->view('Layout/Scripts');
     ?>
@@ -162,6 +171,7 @@
     <!-- JQUERY STEP -->
     <script src="/resources//scripts/jquery.steps.js"></script>
     <script src="/resources//scripts/main.js"></script>
+    <script src="/resources//scripts/script.js"></script>
     <!-- Template created and distributed by Colorlib -->
 </body>
 
