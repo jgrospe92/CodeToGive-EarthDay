@@ -8,7 +8,7 @@ class Model {
         $server = 'localhost';
 
         // CHANGE THIS TO THE DATABASE NAME
-        $dbname = '';
+        $dbname = 'uglean';
         $username = 'root';
         $password = '';
 
@@ -42,4 +42,20 @@ class Model {
 		if($this->isValid())
 			call_user_func_array([$this,$method],$arguments);
 	}
+    public function get($id) {
+        $classCalled = basename(get_called_class());
+        $SQL = "SELECT * FROM $classCalled WHERE " . $classCalled . "_id = :object_id";
+        $STMT = self::$_connection->prepare($SQL);
+        $STMT->execute(["object_id"=>$id]);
+        $STMT->setFetchMode(\PDO::FETCH_CLASS,'\app\models\\'.$classCalled);
+        return $STMT->fetch();
+    }
+    public function getAll() {
+        $classCalled = basename(get_called_class());
+        $SQL = "SELECT * FROM $classCalled";
+        $STMT = self::$_connection->prepare($SQL);
+        $STMT->execute([]);
+        $STMT->setFetchMode(\PDO::FETCH_CLASS,'\app\models\\'.$classCalled);
+        return $STMT->fetchAll();
+    }
 }

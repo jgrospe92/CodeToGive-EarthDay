@@ -1,0 +1,196 @@
+/* Style the search field */
+form.example input[type="text"] {
+  position: relative;
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-radius: 20px;
+  float: left;
+  width: 80%;
+  left: 30px;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  position: relative;
+  border-radius: 20px;
+  right: 40px;
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196f3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#earth {
+  position: relative;
+  left: -300px;
+  width: 70px;
+  height: 60px;
+}
+#uglean {
+  position: relative;
+  width: 220px;
+  height: 70px;
+  left: -500px;
+}
+.options {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  position: fixed;
+  left: 5%;
+  padding: 5px;
+  top: 200px;
+  height: 70%;
+  width: 400px;
+}
+.feed {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  position: fixed;
+  left: 30%;
+  top: 200px;
+  height: 70%;
+  scroll-behavior: auto;
+  overflow: auto;
+  scrollbar-base-color: rgb(0, 221, 255);
+  font-family: sans-serif;
+  padding: 10px;
+}
+.event_card {
+  padding: 24px;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+  border-radius: 20px;
+  width: 1000px;
+  height: 160px;
+  background-color: white;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  line-height: 0em;
+  /* font-size: 14px; */
+}
+.event_card:hover {
+  box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.2);
+}
+#farmName {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+#location {
+  position: relative;
+  top: 30px;
+}
+#spots {
+  position: relative;
+  top: 50px;
+}
+#spots_img {
+  position: relative;
+  height: 30px;
+}
+
+#days {
+  position: relative;
+  left: 230px;
+  top: -40px;
+}
+#days_img {
+  position: relative;
+  height: 50px;
+  width: 50px;
+}
+#harvested {
+  position: relative;
+  top: 53px;
+}
+#harvested_img {
+  position: relative;
+  height: 50px;
+  width: 50px;
+}
+#need {
+  position: relative;
+  left: 230px;
+  top: -43px;
+}
+#need_img {
+  position: relative;
+  height: 50px;
+  width: 50px;
+}
+#mk_group {
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  color: white;
+  left: 600px;
+  top: -200px;
+  /* padding: 24px; */
+  padding-left: 10px;
+  background-color: #50c2d1;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  width: 150px;
+  height: 50px;
+}
+#mk_group_img {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  top: 0px;
+}
+.mk_group:hover {
+  box-shadow: 0 16px 32px 0 rgba(251, 33, 33, 0.2);
+}
+#jn_group {
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  color: white;
+  left: 650px;
+  top: -200px;
+  padding-left: 10px;
+  background-color: #50c2d1;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+  border-radius: 20px;
+  width: 150px;
+  height: 50px;
+}
+#jn_group_img {
+  position: relative;
+  height: 40px;
+  width: 40px;
+}
+#footer {
+  position: fixed;
+  top: 95%;
+}
+iframe {
+  position: relative;
+  top: 342px;
+  left: 2.7%;
+  border-radius: 20px;
+}
