@@ -53,12 +53,12 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="/resources/images/musk.jpg" alt="Third slide">
+                    <img class="d-block w-100" src="/resources/images/team.jpg" alt="Third slide">
                     <div class="container">
-                        <div class="carousel-caption text-end">
-                            <h1>Will Elon Musk buyout UGlean?</h1>
+                        <div id="carousel_3" class="carousel-caption text-end">
+                            <h1>Pictures are in ! </h1>
                             <p>
-                                The billionaire is looking to purchase the UGlean platform. Read more about this fake article below.
+                                Click here to see all the wonderful pictures form our volunteers!
                             </p>
                             <p>
                                 <a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
