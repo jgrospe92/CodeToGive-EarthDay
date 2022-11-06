@@ -1,4 +1,11 @@
-<?php $this->view('Layout/Header'); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <?php
+    $this->view('Layout/Head');
+    ?>
+    <title>U Glean</title>
+</head>
 <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -90,7 +97,7 @@
                     <h2 class="fw-normal">Volunteers</h2>
                     <p>Looking to become a volunteer gleaner? Click here to sign up!</p>
                     <p>
-                        <a class="btn btn-secondary" href="#">Sign In &raquo;</a>
+                        <a class="btn btn-secondary" href="/Register/gleaner">Sign Up &raquo;</a>
                     </p>
                 </div>
                 <!-- /.col-lg-4 -->
@@ -117,7 +124,7 @@
                         Click here!
                     </p>
                     <p>
-                        <a class="btn btn-secondary" href="#">Sign In &raquo;</a>
+                        <a class="btn btn-secondary" href="/Register/foodbank">Sign Up &raquo;</a>
                     </p>
                 </div>
                 <!-- /.col-lg-4 -->
