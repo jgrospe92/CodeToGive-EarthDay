@@ -60,7 +60,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="/resources/images/musk.jpg" alt="Third slide">
+                    <img class="d-block w-100" src="/resources/images/team.png" alt="Third slide">
                     <div class="container">
                         <div class="carousel-caption text-end">
                             <h1>Pictures are in!</h1>
