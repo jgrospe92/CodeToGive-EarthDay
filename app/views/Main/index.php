@@ -1,4 +1,14 @@
-<?php $this->view('Layout/Header'); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <?php
+    $this->view('Layout/Head');
+    ?>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/"/>
+    <link rel="stylesheet" href="/resources/styles/carousel.css">
+    <link rel="stylesheet" href="/resources/styles/bootstrap.min.css">
+    <title>U Glean</title>
+</head>
 <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -7,6 +17,9 @@
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
+      }
+      .text-color h1, .text-color p{
+            color: white;
       }
 
       @media (min-width: 768px) {
@@ -29,7 +42,7 @@
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="/resources/images/miletsone.jpg" alt="First slide">
                     <div class="container">
-                        <div class="carousel-caption text-start">
+                        <div class="carousel-caption text-start text-color">
                             <h1>Milestone Achieved! </h1>
                             <p>
                                 Over the past year, UGlean has helped rescue over 85% of the leftover crops and has helped feed over 200 people in need.
@@ -53,12 +66,12 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="/resources/images/musk.jpg" alt="Third slide">
+                    <img class="d-block w-100" src="/resources/images/teams.jpg" alt="Third slide">
                     <div class="container">
-                        <div class="carousel-caption text-end">
-                            <h1>Will Elon Musk buyout UGlean?</h1>
+                        <div class="carousel-caption text-color text-end">
+                            <h1>Pictures are in!</h1>
                             <p>
-                                The billionaire is looking to purchase the UGlean platform. Read more about this fake article below.
+                                View pictures from last year's events here!                            
                             </p>
                             <p>
                                 <a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
@@ -90,7 +103,7 @@
                     <h2 class="fw-normal">Volunteers</h2>
                     <p>Looking to become a volunteer gleaner? Click here to sign up!</p>
                     <p>
-                        <a class="btn btn-secondary" href="#">Sign In &raquo;</a>
+                        <a class="btn btn-secondary" href="/Register/gleaner">Sign Up &raquo;</a>
                     </p>
                 </div>
                 <!-- /.col-lg-4 -->
@@ -103,7 +116,7 @@
                         here!
                     </p>
                     <p>
-                        <a class="btn btn-secondary" href="/Main/farmer">Sign In &raquo;</a>
+                        <a class="btn btn-secondary" href="/Register/farmer_account">Sign Up &raquo;</a>
                     </p>
                 </div>
                 <!-- /.col-lg-4 -->
@@ -117,14 +130,11 @@
                         Click here!
                     </p>
                     <p>
-                        <a class="btn btn-secondary" href="#">Sign In &raquo;</a>
+                        <a class="btn btn-secondary" href="/Register/foodbank">Sign Up &raquo;</a>
                     </p>
                 </div>
                 <!-- /.col-lg-4 -->
             </div>
-            <!-- /.row -->
-
-            <!-- START THE FEATURETTES -->
 
             <!-- START THE FEATURETTES -->
 

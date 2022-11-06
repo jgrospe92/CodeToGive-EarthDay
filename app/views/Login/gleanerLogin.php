@@ -1,40 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="" />
+    <?php
+        $this->view('Layout/Head');
+    ?>
         <title>Login</title>
-
-        <link
-        rel="canonical"
-        href="https://getbootstrap.com/docs/5.2/examples/carousel/"
-        />
-        <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-        crossorigin="anonymous"
-        /> 
-        <link href="../css/bootstrap.min.css" rel="stylesheet" />
-
     </head>
     <body>
-        <header>
-            <nav class="navbar" style="background-color: #50c2d1">
-              <div class="container">
-                <a href="https://earthday.ca">
-                  <img src="\assets\earthday_white.png" width="40" height="40" />
-                </a>
-                <a href="/">
-                  <img src="\assets\ugleen.png" width="80" height="80" />
-                </a>
-                <a href="/">
-                  <img src="\assets\ugleen_txt.png" width="80" height="80" />
-                </a>
-              </div>
-            </nav>
-          </header>
+    <?php
+    $this->view('Layout/Navigation');
+    ?>
         <main>
             <div class="container">
                 <div class="row justify-content-center">
@@ -43,9 +18,9 @@
                             <h2 class="card-title text-center">Login as Gleaner</a></h2>
                             
                             <div class="navbar">
-                                <a class="active" href="\app\views\Login\gleanerLogin.php">Gleaner</a>
-                                <a href="\app\views\Login\farmerLogin.php">Famer</a>
-                                <a href="\app\views\Login\foodBankLogin.php">Food Bank</a>
+                                <a class="active" href="\Login\gleaner">Gleaner</a>
+                                <a href="\Login\farmer">Farmer</a>
+                                <a href="\Login\foodBank">Food Bank</a>
                             </div>
 
                             <hr >
@@ -58,7 +33,7 @@
                                             <input type="password" class="form-control" id="password" placeholder="Password">
                                         </div>
                                         <div class="d-flex flex-row align-items-center justify-content-between">
-                                            <a href="\app\views\Register\gleanerRegister.php">Register</a>
+                                            <a href="\Register\gleaner">Register</a>
                                             <button class="btn btn-primary">Login</button>
                                         </div>
                                     </form>

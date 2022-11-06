@@ -8,7 +8,7 @@
       <div class="col">
         <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
         <h3 class="p-3 text-primary font-italic text-center ">
-          your profile
+         Edit your profile
         <h3> 
         </nav>
       </div>
@@ -22,7 +22,12 @@
               class="rounded-circle img-fluid" style="width: 150px;">
             <h5 class="my-3 ">John Smith</h5>
             <div class="d-flex justify-content-center mb-2">
-              <button type="button" class="btn btn-primary">Edit Profile</button>
+              <form>
+                 <div class="form-group">
+                   <label for="exampleFormControlFile1">select your picture</label>
+                   <input type="file" class="form-control-file " id="exampleFormControlFile1">
+                 </div>
+              </form>
             </div>
           </div>
         </div>
@@ -36,7 +41,7 @@
                 <p class="mb-0">Full Name</p>
               </div>
               <div class="col-sm-9">
-                <p class="text-muted mb-0">Johnatan Smith</p>
+                <input type"text" class="text-muted mb-0" placeholder="Johnatan Smith">
               </div>
             </div>
             <hr>
@@ -45,7 +50,8 @@
                 <p class="mb-0">Email</p>
               </div>
               <div class="col-sm-9">
-                <p class="text-muted mb-0">example@example.com</p>
+                  <input type"text" class="text-muted mb-0" placeholder="example@example.com">
+            
               </div>
             </div>
             <hr>
@@ -54,7 +60,8 @@
                 <p class="mb-0">Phone</p>
               </div>
               <div class="col-sm-9">
-                <p class="text-muted mb-0">(097) 234-5678</p>
+                  <input type"text" class="text-muted mb-0" placeholder="(097) 234-5678">
+               
               </div>
             </div>
             <hr>
@@ -63,7 +70,8 @@
                 <p class="mb-0">Mobile</p>
               </div>
               <div class="col-sm-9">
-                <p class="text-muted mb-0">(098) 765-4321</p>
+                  <input type"text" class="text-muted mb-0" placeholder="(098) 765-4321">
+             
               </div>
             </div>
             <hr>
@@ -72,58 +80,22 @@
                 <p class="mb-0">Address</p>
               </div>
               <div class="col-sm-9">
-                <p class="text-muted mb-0">Bay Area, San Francisco, CA</p>
+        
+                   <textarea class="form-control" placeholder="Bay Area, San Francisco, CA"></textarea>
+              
               </div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6">
-            <div class="card mb-4 mb-md-0">
-              <div class="card-body">
-                <p class="mb-4"><span class="text-primary font-italic me-1">Your Groups</span>
-                </p>
-               <div class="mb-3" >
-                <p class="mb-1" style="font-size: .77rem; display:inline-block;">Web Design</p>
-               
-                 <button type="button" class="btn btn-primary ml-4">leave the group</button>
-                </div> 
-                  <div class="mb-3" >
-                <p class="mb-1" style="font-size: .77rem; display:inline-block;">Web Design</p>
-               
-                 <button type="button" class="btn btn-primary ml-4">leave the group</button>
-                </div> 
-             
-              </div>
-            </div>
+           
           </div>
           <div class="col-md-6">
             <div class="card mb-4 mb-md-0">
-              <div class="card-body">
-                <p class="mb-4"><span class="text-primary font-italic me-1">Your Events</span>
-                </p>
-               <div class="mb-3" >
-                <p class="mb-1" style="font-size: .77rem; display:inline-block;">Web Design</p>
-               
-                 <button type="button" class="btn btn-primary ml-4">cancle event</button>
-                </div> 
-                <div class="mb-3" >
-                <p class="mb-1" style="font-size: .77rem; display:inline-block;">Web Design</p>
-               
-                 <button type="button" class="btn btn-primary ml-4">cancle event</button>
-                </div> 
-
-               <div class="mb-3" >
-                <p class="mb-1" style="font-size: .77rem; display:inline-block;">Web Design</p>
-            
-                 <button type="button" class="btn btn-primary ml-4">cancle event</button>
-               </div> 
-
-                <div class="mb-3" >
-                <p class="mb-1" style="font-size: .77rem; display:inline-block;">Web Design</p>
-            
-                 <button type="button" class="btn btn-primary ml-4">cancle event</button>
-               </div> 
+             
+              <button type="button" class="btn btn-primary">Save Changes</button>
+              
               </div>
             </div>
           </div>

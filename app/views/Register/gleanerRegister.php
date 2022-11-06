@@ -1,111 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="" />
-        <title>Gleaner Registration</title>
+    <?php
+    $this->view('Layout/Head');
+    ?>
+    <link rel="stylesheet" href="/resources/styles/style.css">
+    <link rel="stylesheet" href="/resources/styles/mainStyles.css">
+    <link rel="stylesheet" href="/resources/styles/modal.css">
+    <link rel="stylesheet" href="/resources/fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+    <title>Gleaner Registration</title>
+</head>
 
-        <link
-        rel="canonical"
-        href="https://getbootstrap.com/docs/5.2/examples/carousel/"
-        />
-        <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-        crossorigin="anonymous"
-        /> 
-        <link href="../css/bootstrap.min.css" rel="stylesheet" />
+<body>
+    <?php $this->view('Layout/Navigation'); ?>
+    <main class="container-fluid">
+        <div class="wrapper">
+            <!-- FORM STARTS -->
+            <form method="POST" action="" id="wizard">
+                <!-- SECTION 1 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+                        <div class="image-holder ">
+                            <img src="https://images.unsplash.com/photo-1578357078586-491adf1aa5ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" alt="">
+                        </div>
 
-    </head>
-    <body>
-        <header>
-            <nav class="navbar" style="background-color: #50c2d1">
-              <div class="container">
-                <a href="https://earthday.ca">
-                  <img src="\assets\earthday_white.png" width="40" height="40" />
-                </a>
-                <a href="/">
-                  <img src="\assets\ugleen.png" width="80" height="80" />
-                </a>
-                <a href="/">
-                  <img src="\assets\ugleen_txt.png" width="40" height="40" />
-                </a>
-              </div>
-            </nav>
-          </header>
-        <main>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-5">
-                        <div class="card">
-                            <h2 class="card-title text-center">Register to be a Gleaner</a></h2>
-                            <hr >
-                                <div class="card-body py-md-4">
-                                    <form _lpchecked="1" action='' method='post'>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="name" placeholder="Name">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" id="email" placeholder="Email">
-                                        </div>                            
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" id="password" placeholder="Password">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" id="confirm-password" placeholder="Confirm password">
-                                        </div>
-                                        <div class="d-flex flex-row align-items-center justify-content-between">
-                                            <a href="\app\views\Login\gleanerLogin.php">Login</a>
-                                            <button class="btn btn-primary">Create Account</button>
-                                        </div>
-                                    </form>
+                        <div class="form-content">
+                            <div class="form-header">
+                                <h3>Gleaner Registration</h3>
+                            </div>
+                            <p>Account</p>
+                            <div class="form-row d-flex justify-content-center">
+                                <div class="form-holder">
+                                    <input type="text" name="email" placeholder="Enter your email" class="form-control" required>
+                                </div>
+
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder">
+                                    <input type="text" name="password" placeholder="Enter Password" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder">
+                                    <input type="text" name="password" placeholder="confirm password" class="form-control" required>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </main>
-    </body>
+                </section>
+                <!-- SECTION 2 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+                        <div class="image-holder">
+                            <img src="https://images.unsplash.com/photo-1551649001-7a2482d98d05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
+                        </div>
+                        <div class="form-content">
+                            <div class="form-header">
+                                <h3>Gleaner Registration</h3>
+                            </div>
+                            <p>Gleaner details</p>
+                            <div class="form-row">
+                                <div class="form-holder w-100">
+                                    <input type="text" placeholder="first name" name="first_name" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder">
+                                    <input type="text" placeholder="last name"  name="last_name" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder">
+                                    <input type="text" placeholder="Phone number" class="form-control">
+                                </div>
+                            </div>
 
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=PT+Sans');
+                        </div>
+                    </div>
+                </section>
 
-        body{
-            background: #fff;
-            font-family: 'PT Sans', sans-serif;
-        }
-        h2{
-            padding-top: 1.5rem;
-        }
-        .card{
-            border: 0.40rem solid #f8f9fa;
-            top: 10%;
-        }
-        .form-control{
-            background-color: #f8f9fa;
-            padding: 20px;
-            padding: 25px 15px;
-            margin-bottom: 1.3rem;
-        }
+                <!-- SECTION 3 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+                        <div class="image-holder">
+                            <img src="/resources//images/gleaner_farmer.jpg" alt="">
+                        </div>
+                        <div class="form-content">
+                            <div class="form-header">
+                                <h3>Gleaner Registration</h3>
+                            </div>
+                            <p>Additional details</p>
+                            <div class="form-row">
+								<div class="form-holder w-100">
+									<textarea name="bio" id="" placeholder="Bio" class="form-control" style="height: 99px;"></textarea>
+								</div>
+							</div>
+                            <div class="checkbox-circle mt-24">
+                                <label>
+                                    <input type="checkbox" checked> Please accept <label for="modal-1" style="color:black">terms and conditions ?</label>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </form>
+        </div>
+    </main>
+<!-- MODAL -->
+<input class="modal-state" id="modal-1" type="checkbox" />
+<div class="modal" style="z-index: 99;">
+  <label class="modal__bg" for="modal-1"></label>
+  <div class="modal__inner">
+    <label class="modal__close" for="modal-1"></label>
+    <h2>TERMS & CONDITION</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestiae, aut minima atque mollitia possimus! Nostrum eum dolorem possimus dolore atque voluptatum velit aspernatur mollitia modi nesciunt ad veritatis, tenetur quas! Sit libero quia voluptate ipsum iure dignissimos dolorem aliquam dolor mollitia facere, ratione repudiandae cumque fugiat ea deleniti sunt. Libero vel laboriosam perspiciatis praesentium ipsum nesciunt veritatis dolore? Placeat aliquam est dolor odio, cupiditate sequi deleniti culpa tenetur, tempore ipsa asperiores? At voluptatem, architecto deleniti modi velit corporis quae amet quaerat fugit possimus dolorem nisi officiis eaque porro quis eveniet praesentium doloremque, quisquam saepe voluptatibus dolore laboriosam minus. Eum.</p>
+  </div>
+</div>
+<!-- MODAL END -->
+    <?php
+    $this->view('Layout/Scripts');
+    ?>
+    <!-- JQUERY -->
+    <script src="/resources/scripts/jquery-3.3.1.min.js"></script>
+    <!-- JQUERY STEP -->
+    <script src="/resources//scripts/jquery.steps.js"></script>
+    <script src="/resources//scripts/main.js"></script>
+    <script src="/resources//scripts/script.js"></script>
+    <!-- Template created and distributed by Colorlib -->
+</body>
 
-        .form-control:focus {
-            color: #000000;
-            background-color: #ffffff;
-            border: 3px solid #da5767;
-            outline: 0;
-            box-shadow: none;
-        }
-        .btn{
-            padding: 0.6rem 1.2rem;
-            background: #50c2d1;
-            border: 2px solid #50c2d1;
-        }
-        .btn-primary:hover {
-            background-color: #00D100;
-            border-color: #00D100;
-            transition: .3s;
-        }
-    </style>
 </html>
