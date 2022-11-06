@@ -1,11 +1,25 @@
 <?php $this->view('Layout/Header'); ?>
 <link rel="stylesheet" href="/resources/styles/gleaner_feed.css">
 <!-- For the featurette -->
+<style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
 
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
 <body>
     <?php $this->view('Layout/Navigation'); ?>
     <main class='container-sm'>
-        
         <h1 style="position: relative; left: 45%; top: 30px">Gleaning Events</h1>
         <div class="options">
           <a style="position: relative; left: 30%; margin: 3px">Control Panel</a>
