@@ -1,4 +1,34 @@
-<?php $this->view('Layout/Header'); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <?php
+    $this->view('Layout/Head');
+    ?>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/"/>
+    <link rel="stylesheet" href="/resources/styles/carousel.css">
+    <link rel="stylesheet" href="/resources/styles/bootstrap.min.css">
+    <title>U Glean</title>
+</head>
+<style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .text-color h1, .text-color p{
+            color: white;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
 <body>
     <?php $this->view('Layout/Navigation'); ?>
     <main>
@@ -12,7 +42,7 @@
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="/resources/images/miletsone.jpg" alt="First slide">
                     <div class="container">
-                        <div class="carousel-caption text-start">
+                        <div class="carousel-caption text-start text-color">
                             <h1>Milestone Achieved! </h1>
                             <p>
                                 Over the past year, UGlean has helped rescue over 85% of the leftover crops and has helped feed over 200 people in need.
@@ -36,12 +66,12 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="/resources/images/musk.jpg" alt="Third slide">
+                    <img class="d-block w-100" src="/resources/images/teams.jpg" alt="Third slide">
                     <div class="container">
-                        <div class="carousel-caption text-end">
-                            <h1>Will Elon Musk buyout UGlean?</h1>
+                        <div class="carousel-caption text-color text-end">
+                            <h1>Pictures are in!</h1>
                             <p>
-                                The billionaire is looking to purchase the UGlean platform. Read more about this fake article below.
+                                View pictures from last year's events here!                            
                             </p>
                             <p>
                                 <a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
@@ -73,7 +103,7 @@
                     <h2 class="fw-normal">Volunteers</h2>
                     <p>Looking to become a volunteer gleaner? Click here to sign up!</p>
                     <p>
-                        <a class="btn btn-secondary" href="#">Sign In &raquo;</a>
+                        <a class="btn btn-secondary" href="/Register/gleaner">Sign Up &raquo;</a>
                     </p>
                 </div>
                 <!-- /.col-lg-4 -->
@@ -86,7 +116,7 @@
                         here!
                     </p>
                     <p>
-                        <a class="btn btn-secondary" href="/Main/farmer">Sign In &raquo;</a>
+                        <a class="btn btn-secondary" href="/Register/farmer_account">Sign Up &raquo;</a>
                     </p>
                 </div>
                 <!-- /.col-lg-4 -->
@@ -100,20 +130,19 @@
                         Click here!
                     </p>
                     <p>
-                        <a class="btn btn-secondary" href="#">Sign In &raquo;</a>
+                        <a class="btn btn-secondary" href="/Register/foodbank">Sign Up &raquo;</a>
                     </p>
                 </div>
                 <!-- /.col-lg-4 -->
             </div>
-            <!-- /.row -->
 
             <!-- START THE FEATURETTES -->
 
-            <hr class="featurette-divider" />
+            <hr class="featurette-divider">
 
             <div class="row featurette">
                 <div class="col-md-7">
-                    <h2 class="featurette-heading fw-normal lh-1">
+                <h2 class="featurette-heading fw-normal lh-1">
                         LAUNCH OF THE PROGRAM TOMORROW’S FOREST
                         <span class="text-muted">GREEN INFRASTRUCTURE</span>
                     </h2>
@@ -124,44 +153,47 @@
                     </p>
                 </div>
                 <div class="col-md-5">
-                    <img src="/resources/images/art1.jpeg" height="400" width="500" style="border-radius: 10px;box-shadow:inset 30px;">
+                <img  class="bd-placeholder-img featurette-image  mx-auto" src="/resources/images/art1.jpeg" height="400" width="500" style="border-radius: 10px;box-shadow:inset 30px;">
+                        <title>Green</title>
+                        <rect width="100%" height="100%" fill="#eee" />
+                    </img>
+
                 </div>
             </div>
 
-            <hr class="featurette-divider" />
+            <hr class="featurette-divider">
 
-            <div class="row featurette ">
+            <div class="row featurette">
                 <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading fw-normal lh-1">
-                        FOR APRIL 22, JOIN THE MOVEMENT!
-                        <span class="text-muted">See for yourself.</span>
-                    </h2>
-                    <p class="lead">
-                        Check out our suggestions for activities and initiatives to join near you in our online calendar!
-                    </p>
+                    <h2 class="featurette-heading">FOR APRIL 22, JOIN THE MOVEMENT!<span class="text-muted">See for yourself.</span></h2>
+                    <p class="lead">Check out our suggestions for activities and initiatives to join near you in our online calendar!</p>
                 </div>
                 <div class="col-md-5 order-md-1">
-                    <img src="/resources/images/art2.jpg" height="400" width="500" style="border-radius: 10px;box-shadow:inset 30px;">
-                    </img>
-                </div>
-            </div>
-            <hr class="featurette-divider" />
-            <div class="row featurette">
-                <div class="col-md-7 ">
-                    <h2 class="featurette-heading fw-normal lh-1">
-                        CALL IN SICK FOR EARTH DAY <span class="text-muted">Checkmate.</span>
-                    </h2>
-                    <p class="lead">
-                        Discover the 2022 edition of the Earth Day campaign that highlights eco-anxiety, produced by the creative agency Sid Lee.
-                        #CallinSickforEarthDay #RemedyTogether #EarthDay2022
-                    </p>
-                </div>
-                <div class="col-md-5">
-                    <img src="/resources/images/art3.jpg" height="400" width="500" style="border-radius: 10px;box-shadow:inset 30px;">
+                    <img class="bd-placeholder-img featurette-image  mx-auto" width="400" height="400" src="/resources/images/art2.jpg" style="border-radius: 10px;box-shadow:inset 30px;">
+                        <title>Event</title>
+                        <rect width="100%" height="100%" fill="#eee" />
+                    </i>
                 </div>
             </div>
 
-            <hr class="featurette-divider" />
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading"> CALL IN SICK FOR EARTH DAY <span class="text-muted">Checkmate.</span></h2>
+                    <p class="lead"> Discover the 2022 edition of the Earth Day campaign that highlights eco-anxiety, produced by the creative agency Sid Lee.
+                        #CallinSickforEarthDay #RemedyTogether #EarthDay2022</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image  mx-auto" width="500" height="400" src="/resources/images/art3.jpg" role="img" style="border-radius: 10px;box-shadow:inset 30px;">
+                        <title>What's new</title>
+                        <rect width="100%" height="100%" fill="#eee" />
+                    </img>
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
 
             <!-- /END THE FEATURETTES -->
         </div>

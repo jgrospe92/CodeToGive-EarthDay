@@ -1,84 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<?php $this->view('Layout/Header'); ?>
-    <body>
+<head>
+    <?php
+    $this->view('Layout/Head');
+    ?>
+    <link rel="stylesheet" href="/resources/styles/style.css">
+    <link rel="stylesheet" href="/resources/styles/mainStyles.css">
+    <link rel="stylesheet" href="/resources/styles/modal.css">
+    <link rel="stylesheet" href="/resources/fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+    <title>Gleaner Registration</title>
+</head>
+
+<body>
     <?php $this->view('Layout/Navigation'); ?>
-        <main>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-5">
-                        <div class="card">
-                            <h2 class="card-title text-center">Register to be a Gleaner</a></h2>
-                            <hr >
-                                <div class="card-body py-md-4">
-                                    <form _lpchecked="1" action='' method='post'>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="name" placeholder="Name">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" id="email" placeholder="Email">
-                                        </div>     
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="username" placeholder="Username">
-                                        </div>                        
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" id="password" placeholder="Password">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" id="confirm-password" placeholder="Confirm password">
-                                        </div>
-                                        <div class="d-flex flex-row align-items-center justify-content-between">
-                                            <a href="\app\views\Login\gleanerLogin.php">Login</a>
-                                            <button type= "submit" class="btn btn-primary">Create Account</button>
-                                        </div>
-                                    </form>
+    <main class="container-fluid">
+        <div class="wrapper">
+            <!-- FORM STARTS -->
+            <form method="POST" action="" id="wizard">
+                <!-- SECTION 1 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+                        <div class="image-holder ">
+                            <img src="https://images.unsplash.com/photo-1578357078586-491adf1aa5ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" alt="">
+                        </div>
+
+                        <div class="form-content">
+                            <div class="form-header">
+                                <h3>Gleaner Registration</h3>
+                            </div>
+                            <p>Account</p>
+                            <div class="form-row d-flex justify-content-center">
+                                <div class="form-holder">
+                                    <input type="text" name="email" placeholder="Enter your email" class="form-control" required>
+                                </div>
+
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder">
+                                    <input type="text" name="password" placeholder="Enter Password" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder">
+                                    <input type="text" name="password" placeholder="confirm password" class="form-control" required>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-        <?php $this->view('Layout/Footer'); ?>
-        <?php $this->view('Layout/Scripts'); ?>
     </body>
 
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=PT+Sans');
-
-        body{
-            background: #fff;
-            font-family: 'PT Sans', sans-serif;
-        }
-        h2{
-            padding-top: 1.5rem;
-        }
-        .card{
-            border: 0.40rem solid #f8f9fa;
-            top: 10%;
-        }
-        .form-control{
-            background-color: #f8f9fa;
-            padding: 20px;
-            padding: 25px 15px;
-            margin-bottom: 1.3rem;
-        }
-
-        .form-control:focus {
-            color: #000000;
-            background-color: #ffffff;
-            border: 3px solid #da5767;
-            outline: 0;
-            box-shadow: none;
-        }
-        .btn{
-            padding: 0.6rem 1.2rem;
-            background: #50c2d1;
-            border: 2px solid #50c2d1;
-        }
-        .btn-primary:hover {
-            background-color: #00D100;
-            border-color: #00D100;
-            transition: .3s;
-        }
-    </style>
 </html>

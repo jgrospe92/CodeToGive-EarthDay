@@ -1,41 +1,43 @@
 :root {
-    --main-text-colour-dark: #011936;
-    --header-bg:#50c2d1;
-    --main-bg: inherit;
+  --main-text-colour-dark: #011936;
+  --header-bg: #50c2d1;
+  --main-bg: inherit;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    color: var(--main-text-colour-dark);
+  margin: 0;
+  padding: 0;
+  color: var(--main-text-colour-dark);
 }
 html {
-    width: 100vw;
+  width: 100vw;
+  height: 100%;
 }
+
 body {
-    position: absolute;
-    width: 100%;
-    overflow-x: hidden;
-    background-color: var(--main-bg);
+  position: absolute;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: var(--main-bg);
+  min-height: 100%;
 }
 
 header {
-    padding: 1rem;
-    width: 100%;
-    height: 6rem;
-    background-color: var(--header-bg);
-
+  padding: 1rem;
+  width: 100%;
+  height: 6rem;
+  background-color: var(--header-bg);
 }
 header > nav {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 header > nav > * {
-    max-height: 100%;
+  max-height: 100%;
 }
-footer {
+/* footer {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
@@ -45,4 +47,4 @@ footer {
     bottom: 0;
     text-align: center;
     background-color: var(--main-bg);
-}
+} */
