@@ -63,9 +63,9 @@
                     <img class="d-block w-100" src="/resources/images/musk.jpg" alt="Third slide">
                     <div class="container">
                         <div class="carousel-caption text-end">
-                            <h1>Will Elon Musk buyout UGlean?</h1>
+                            <h1>Pictures are in!</h1>
                             <p>
-                                The billionaire is looking to purchase the UGlean platform. Read more about this fake article below.
+                                View pictures form last year's events below!
                             </p>
                             <p>
                                 <a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
