@@ -43,10 +43,34 @@
                             <h2 class="card-title text-center">Register to be a Food Bank</a></h2>
                             <hr >
                                 <div class="card-body py-md-4">
-                                    <form _lpchecked="1">
+                                    <form _lpchecked="1" action='' method='post' enctype='multipart/form-data'>
+                                        <label>Profile Picture:<input type="file" name="profile_pic" id="profile_pic" /></label>
+                                            <img id='profile_pic_preview' src='/images/blank.jpg' style="max-width:200px;max-height:200px" /><br>
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="name" placeholder="Name">
                                         </div>
+                                        <div class="form-group">
+                                            <input type="tel" class="form-control" id="phone" placeholder="Phone Number">
+                                        </div> 
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="region" placeholder="Region">
+                                        </div> 
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="municipality" placeholder="Municipality">
+                                        </div> 
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="address" placeholder="Address">
+                                        </div> 
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="city" placeholder="City">
+                                        </div> 
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="province" placeholder="Province">
+                                        </div> 
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="postalcode" placeholder="Postal Code">
+                                        </div> 
+                                        <hr >
                                         <div class="form-group">
                                             <input type="email" class="form-control" id="email" placeholder="Email">
                                         </div>                            

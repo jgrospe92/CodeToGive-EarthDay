@@ -16,7 +16,7 @@
         <input type="submit" name="action" value="Login" /><br>
 
     </form>
-    <a href="\app\views\Register\gleanerRegister.php">Register</a> <!--change path later on -->
+    <a href="\app\views\Register\foodbankRegister.php">Register</a> <!--change path later on -->
 
 </body>
 </html>
