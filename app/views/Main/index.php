@@ -130,7 +130,7 @@
 
             <hr class="featurette-divider" />
 
-            <div class="row featurette">
+            <div class="row featurette ">
                 <div class="col-md-7 order-md-2">
                     <h2 class="featurette-heading fw-normal lh-1">
                         FOR APRIL 22, JOIN THE MOVEMENT!
@@ -145,11 +145,9 @@
                     </img>
                 </div>
             </div>
-
             <hr class="featurette-divider" />
-
             <div class="row featurette">
-                <div class="col-md-7">
+                <div class="col-md-7 ">
                     <h2 class="featurette-heading fw-normal lh-1">
                         CALL IN SICK FOR EARTH DAY <span class="text-muted">Checkmate.</span>
                     </h2>
@@ -167,9 +165,9 @@
 
             <!-- /END THE FEATURETTES -->
         </div>
+        <?php $this->view('Layout/Footer'); ?>
+        <?php $this->view('Layout/Scripts'); ?>
     </main>
-    <?php $this->view('Layout/Footer'); ?>
-    <?php $this->view('Layout/Scripts'); ?>
 </body>
 
 </html>
