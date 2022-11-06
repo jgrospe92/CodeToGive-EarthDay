@@ -3,8 +3,8 @@ namespace app\controllers;
 
 class Register extends \app\core\Controller {
 
-    public function account(){
-        $this->view('Register/account');
+    public function farmer_account(){
+        $this->view('Register/farmer_account');
     }
     
     public function farmer(){
