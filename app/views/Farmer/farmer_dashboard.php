@@ -4,6 +4,8 @@
 
 <?php $this->view('Layout/Header'); ?>
  <?php $this->view('Layout/Navigation'); ?>
+ <br>
+ <br>
 <body class=" m-t-3">
     <section class="user-page section-padding ">
         <div class="container m-t-3">
