@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php $this->view('Layout/HeadLinks'); ?>
-    <link rel="stylesheet" href="/resources/styles/carousel.css">
-    <title>U Glean</title>
-</head>
-
+<?php $this->view('Layout/Header'); ?>
 <body>
-    <?php $this->view('Layout/Header'); ?>
+    <?php $this->view('Layout/Navigation'); ?>
     <main>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -97,7 +86,7 @@
                         here!
                     </p>
                     <p>
-                        <a class="btn btn-secondary" href="#">Sign In &raquo;</a>
+                        <a class="btn btn-secondary" href="/Main/farmer">Sign In &raquo;</a>
                     </p>
                 </div>
                 <!-- /.col-lg-4 -->
@@ -141,7 +130,7 @@
 
             <hr class="featurette-divider" />
 
-            <div class="row featurette">
+            <div class="row featurette ">
                 <div class="col-md-7 order-md-2">
                     <h2 class="featurette-heading fw-normal lh-1">
                         FOR APRIL 22, JOIN THE MOVEMENT!
@@ -156,11 +145,9 @@
                     </img>
                 </div>
             </div>
-
             <hr class="featurette-divider" />
-
             <div class="row featurette">
-                <div class="col-md-7">
+                <div class="col-md-7 ">
                     <h2 class="featurette-heading fw-normal lh-1">
                         CALL IN SICK FOR EARTH DAY <span class="text-muted">Checkmate.</span>
                     </h2>
@@ -178,9 +165,9 @@
 
             <!-- /END THE FEATURETTES -->
         </div>
+        <?php $this->view('Layout/Footer'); ?>
+        <?php $this->view('Layout/Scripts'); ?>
     </main>
-    <?php $this->view('Layout/Footer'); ?>
-    <?php $this->view('Layout/Scripts'); ?>
 </body>
 
 </html>
