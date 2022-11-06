@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>Document</title>
+    <!-- CSS only -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.2/examples/carousel/"
+    />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    /> -->
+    <link href="/resources/styles/bootstrap.min.css" rel="stylesheet" />
+    <link href="/resources/styles/gleaner_feed.css" rel="stylesheet" />
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/carousel.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div>
+      <nav class="navbar fixed-top" style="background-color: #50c2d1">
+        <div class="container">
+          <a href="https://earthday.ca">
+            <img
+              id="earth"
+              src="/resources/images/earthday_white.png"
+              width="40"
+              height="40"
+            />
+          </a>
+          <a href="/">
+            <img
+              id="uglean"
+              src="/resources/images/uglean.png"
+              width="80"
+              height="80"
+            />
+          </a>
+        </div>
+      </nav>
+    </div>
+    <br />
+    <br />
+
+    <h1 style="position: relative; left: 45%; top: 30px">Gleaning Events</h1>
+
+    <div class="options">
+      <a style="position: relative; left: 30%; margin: 3px">Control Panel</a>
+      <form class="example" action="action_page.php">
+        <input type="text" placeholder="Search for Farm Name" name="search" />
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Crop Urgency</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>Urgent</option>
+          <option>Moderate</option>
+          <option>Not Urgent</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="spotsAvailable">Group Size</label>
+        <input type="email" class="form-control" id="spotsAvailable" placeholder="How many free spots do you need?">
+      </div>
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe
+            width="370"
+            height="258"
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?q=montreal&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="2px"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe>
+          <br />
+          </style>
+        </div>
+      </div>
+    </div>
+    <div class="feed">
+      <div class="event_card">
+        <div id="farmName">Farm Name</div>
+        <div id="location">Location: Outremont</div>
+
+        <div id="spots">
+          <img id="spots_img" src="/resources/images/card_1.png" />
+          Spots Available: 20/40
+        </div>
+        <div id="harvested">
+          <img id="harvested_img" src="/resources/images/card_2.png" />
+          Harvested:30/50
+        </div>
+        <div id="days">
+          <img id="days_img" src="/resources/images/card_3.png" />
+          Days:MWF
+        </div>
+        <div id="need">
+          <img id="need_img" src="/resources/images/card_4.png" />
+          Need: Urgent
+        </div>
+        <button class="mk_group" id="mk_group">
+          Make Group
+          <img id="mk_group_img" src="/resources/images/card_6.png" />
+        </button>
+        <button class="j_group" id="jn_group">
+          Join Group
+          <img id="jn_group_img" src="/resources/images/card_5.png" />
+        </button>
+      </div>
+      <div class="event_card">
+        <div id="farmName">Farm Name</div>
+        <div id="location">Location: Outremont</div>
+
+        <div id="spots">
+          <img id="spots_img" src="/resources/images/card_1.png" />
+          Spots Available: 20/40
+        </div>
+        <div id="harvested">
+          <img id="harvested_img" src="/resources/images/card_2.png" />
+          Harvested:30/50
+        </div>
+        <div id="days">
+          <img id="days_img" src="/resources/images/card_3.png" />
+          Days:MWF
+        </div>
+        <div id="need">
+          <img id="need_img" src="/resources/images/card_4.png" />
+          Need: Urgent
+        </div>
+        <button class="mk_group" id="mk_group">
+          Make Group
+          <img id="mk_group_img" src="/resources/images/card_6.png" />
+        </button>
+        <button class="j_group" id="jn_group">
+          Join Group
+          <img id="jn_group_img" src="/resources/images/card_5.png" />
+        </button>
+      </div>
+      <div class="event_card">
+        <div id="farmName">Farm Name</div>
+        <div id="location">Location: Outremont</div>
+
+        <div id="spots">
+          <img id="spots_img" src="/resources/images/card_1.png" />
+          Spots Available: 20/40
+        </div>
+        <div id="harvested">
+          <img id="harvested_img" src="/resources/images/card_2.png" />
+          Harvested:30/50
+        </div>
+        <div id="days">
+          <img id="days_img" src="/resources/images/card_3.png" />
+          Days:MWF
+        </div>
+        <div id="need">
+          <img id="need_img" src="/resources/images/card_4.png" />
+          Need: Urgent
+        </div>
+        <button class="mk_group" id="mk_group">
+          Make Group
+          <img id="mk_group_img" src="/resources/images/card_6.png" />
+        </button>
+        <button class="j_group" id="jn_group">
+          Join Group
+          <img id="jn_group_img" src="/resources/images/card_5.png" />
+        </button>
+      </div>
+      <div class="event_card">
+        <div id="farmName">Farm Name</div>
+        <div id="location">Location: Outremont</div>
+
+        <div id="spots">
+          <img id="spots_img" src="/resources/images/card_1.png" />
+          Spots Available: 20/40
+        </div>
+        <div id="harvested">
+          <img id="harvested_img" src="/resources/images/card_2.png" />
+          Harvested:30/50
+        </div>
+        <div id="days">
+          <img id="days_img" src="/resources/images/card_3.png" />
+          Days:MWF
+        </div>
+        <div id="need">
+          <img id="need_img" src="/resources/images/card_4.png" />
+          Need: Urgent
+        </div>
+        <button class="mk_group" id="mk_group">
+          Make Group
+          <img id="mk_group_img" src="/resources/images/card_6.png" />
+        </button>
+        <button class="j_group" id="jn_group">
+          Join Group
+          <img id="jn_group_img" src="/resources/images/card_5.png" />
+        </button>
+      </div>
+    </div>
+    <footer id="footer" class="container">
+      <p>
+        &copy; 2022 Earth Canada. ALL RIGHTS RESERVED &middot;
+        <a href="https://earthday.ca/privacy-policy/">Privacy</a> &middot;
+        <a href="https://earthday.ca/terms-of-use/">Terms</a>
+      </p>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
