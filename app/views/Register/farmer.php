@@ -1,3 +1,4 @@
+<html lang="en">
 <?php $this->view('Layout/Header'); ?>
 
 <body>

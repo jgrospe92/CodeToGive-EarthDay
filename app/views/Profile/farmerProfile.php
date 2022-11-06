@@ -1,24 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="" />
-        <title>Farm Profile</title>
-
-        <link
-        rel="canonical"
-        href="https://getbootstrap.com/docs/5.2/examples/carousel/"
-        />
-        <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-        crossorigin="anonymous"
-        /> 
-        <link href="../css/bootstrap.min.css" rel="stylesheet" />
-
-    </head>       
+<?php $this->view('Layout/Header'); ?>    
 
     <body>
         <header>
@@ -37,7 +19,7 @@
             </nav>
           </header>
           <br>
-
+          
           <main>                
                 <center><div class="farmprofile">
                     <div>
@@ -61,7 +43,7 @@
                     <label>Availability:</label>
                     <p></p>
                     <br>
-
+                    
                     <label>Rating:</label>
                     <p></p>
                     <br>
@@ -131,12 +113,7 @@
                 </div></center>
           </main>
 
-          <footer class="container">
-            <p class="float-end"><a href="#">Back to top</a></p>
-            <p>
-              &copy; 2022 Earth Canada. ALL RIGHTS RESERVED &middot;
-              <a href="https://earthday.ca/privacy-policy/">Privacy</a> &middot; <a href="https://earthday.ca/terms-of-use/">Terms</a>
-            </p>
-          </footer>
+        <?php $this->view('Layout/Footer'); ?>
+        <?php $this->view('Layout/Scripts'); ?>
     </body>
 </html>

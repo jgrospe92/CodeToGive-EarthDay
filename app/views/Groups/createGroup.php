@@ -8,7 +8,7 @@
                 <div class="row justify-content-center">
                     <div class="col-md-5">
                         <div class="card">
-                            <h2 class="card-title text-center">Register to be a Gleaner</a></h2>
+                            <h2 class="card-title text-center">Creating your group</a></h2>
                             <hr >
                                 <div class="card-body py-md-4">
                                     <form _lpchecked="1" action='' method='post'>
@@ -16,20 +16,29 @@
                                             <input type="text" class="form-control" id="name" placeholder="Name">
                                         </div>
                                         <div class="form-group">
-                                            <input type="email" class="form-control" id="email" placeholder="Email">
+                                            <input type="text" class="form-control" id="bio" placeholder="Bio">
                                         </div>     
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="username" placeholder="Username">
+                                        <label for="status">Status</label>
+                                            <select id="status" class="form-control">
+                                                <option selected>Choose...</option>
+                                                <option>public</option>
+                                                <option>private</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputState">State</label>
+                                            <select id="inputState" class="form-control">
+                                                <option selected>Choose...</option>
+                                                <option>...</option>
+                                            </select>
                                         </div>                        
                                         <div class="form-group">
-                                            <input type="password" class="form-control" id="password" placeholder="Password">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" id="confirm-password" placeholder="Confirm password">
+                                            <input type="datetime-local" class="form-control" id="availabilities">
                                         </div>
                                         <div class="d-flex flex-row align-items-center justify-content-between">
-                                            <a href="\app\views\Login\gleanerLogin.php">Login</a>
-                                            <button type= "submit" class="btn btn-primary">Create Account</button>
+                                            <a href="\app\views\Login\gleaner_feed.php">Cancel</a>
+                                            <button type= "submit" class="btn btn-primary">Create gleaning group</button>
                                         </div>
                                     </form>
                             </div>
