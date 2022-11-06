@@ -137,16 +137,6 @@
                 <p class="text-muted mb-0">Bay Area, San Francisco, CA</p>
               </div>
             </div>
-
-            <hr>
-            <div class="row">
-              <div class="col-sm-3">
-                <p class="mb-0">Type of produce</p>
-              </div>
-              <div class="col-sm-9">
-                <p class="text-muted mb-0">Carrots, Corn</p>
-              </div>
-            </div>
             <hr>
             <div class="row">
               <div class="col-sm-3">
@@ -221,64 +211,6 @@
             </div>
           </div>
         </div>
-
-
-
-
-
-        <!-- <div class="row">
-          <div class="col-md-6">
-            <div class="card mb-4 mb-md-0">
-              <div class="card-body">
-                <p class="mb-4"><span class="text-primary font-italic me-1">Events in Progress</span>
-                </p>
-               <div class="mb-3" >
-                <p class="mb-1" style="font-size: .77rem; display:inline-block;">Event 1</p>
-               
-                 <button type="button" class="btn btn-primary ml-4">Details</button>
-                 <button type="button" class="btn btn-primary ml-4">Cancel Event</button>
-                </div> 
-                  <div class="mb-3" >
-                <p class="mb-1" style="font-size: .77rem; display:inline-block;">Event 2</p>
-               
-                 <button type="button" class="btn btn-primary ml-4">Details</button>
-                 <button type="button" class="btn btn-primary ml-4">Cancel Event</button>
-                </div> 
-             
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card mb-4 mb-md-0">
-              <div class="card-body">
-                <p class="mb-4"><span class="text-primary font-italic me-1">Past Events</span>
-                </p>
-               <div class="mb-3" >
-                <p class="mb-1" style="font-size: .77rem; display:inline-block;">Event 1</p>
-               
-                 <button type="button" class="btn btn-primary ml-4">Details</button>
-                </div> 
-                <div class="mb-3" >
-                <p class="mb-1" style="font-size: .77rem; display:inline-block;">Event 2</p>
-               
-                 <button type="button" class="btn btn-primary ml-4">Details</button>
-                </div> 
-
-               <div class="mb-3" >
-                <p class="mb-1" style="font-size: .77rem; display:inline-block;">Event 3</p>
-            
-                 <button type="button" class="btn btn-primary ml-4">Details</button>
-               </div> 
-
-                <div class="mb-3" >
-                <p class="mb-1" style="font-size: .77rem; display:inline-block;">Event 4</p>
-            
-                 <button type="button" class="btn btn-primary ml-4">Details</button>
-               </div> 
-              </div>
-            </div>
-          </div>
-        </div> -->
       </div>
     </div>
   </div>

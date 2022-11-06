@@ -5,6 +5,9 @@ class Main extends \app\core\Controller {
     public function index() {
         $this->view('Main/index');
     }
+
+
+
     public function gleaner_Profile_edit(){
         $this->view('Gleaner/gleaner_Profile_edit');
     }
@@ -15,7 +18,7 @@ class Main extends \app\core\Controller {
     public function farmer_Profile(){ 
         $this->view('Farmer/farmer_Profile');
     }
-
+    
     public function foodBank_Profile_edit(){
         $this->view('FoodBank/foodBank_Profile_edit');
     }
