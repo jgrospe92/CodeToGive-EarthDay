@@ -18,6 +18,9 @@
         -ms-user-select: none;
         user-select: none;
       }
+      .text-color h1, .text-color p{
+            color: white;
+      }
 
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
@@ -39,7 +42,7 @@
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="/resources/images/miletsone.jpg" alt="First slide">
                     <div class="container">
-                        <div class="carousel-caption text-start">
+                        <div class="carousel-caption text-start text-color">
                             <h1>Milestone Achieved! </h1>
                             <p>
                                 Over the past year, UGlean has helped rescue over 85% of the leftover crops and has helped feed over 200 people in need.
@@ -63,9 +66,9 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="/resources/images/teams.png" alt="Third slide">
+                    <img class="d-block w-100" src="/resources/images/teams.jpg" alt="Third slide">
                     <div class="container">
-                        <div class="carousel-caption text-end">
+                        <div class="carousel-caption text-color text-end">
                             <h1>Pictures are in!</h1>
                             <p>
                                 View pictures from last year's events here!                            

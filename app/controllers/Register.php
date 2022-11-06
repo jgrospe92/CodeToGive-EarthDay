@@ -7,9 +7,6 @@ class Register extends \app\core\Controller {
         $this->view('Register/farmer_account');
     }
     
-    public function farmer(){
-        $this->view('Register/farmerRegister');
-    }
     public function gleaner(){
         $this->view('Register/gleanerRegister');
     }

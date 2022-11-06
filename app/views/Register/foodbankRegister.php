@@ -1,65 +1,181 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
     <?php
     $this->view('Layout/Head');
     ?>
-    <title>Foodbank Registration</title>
+    <link rel="stylesheet" href="/resources/styles/style.css">
+    <link rel="stylesheet" href="/resources/styles/mainStyles.css">
+    <link rel="stylesheet" href="/resources/styles/modal.css">
+    <link rel="stylesheet" href="/resources/fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+    <title>Food Bank Registration</title>
 </head>
+
 <body>
     <?php $this->view('Layout/Navigation'); ?>
-    <main class="container mt-5">
-        <fieldset>
-            <h2>Foodbank Profile</h2>
-            <form method="POST">
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputEmail4">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4">
+    <main class="container-fluid">
+        <div class="wrapper">
+            <!-- FORM STARTS -->
+            <form method="POST" action="" id="wizard">
+                <!-- SECTION 1 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+                        <div class="image-holder ">
+                            <img src="https://images.unsplash.com/photo-1643321613219-6d50e1372c0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
+                        </div>
+
+                        <div class="form-content">
+                            <div class="form-header">
+                                <h3>FoodBank Registration</h3>
+                            </div>
+                            <p>Account</p>
+                            <div class="form-row d-flex justify-content-center">
+                                <div class="form-holder">
+                                    <input type="text" name="email" placeholder="Enter your email" class="form-control" required>
+                                </div>
+
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder">
+                                    <input type="text" name="password" placeholder="Enter Password" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder">
+                                    <input type="text" name="password" placeholder="confirm password" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputPassword4">Password</label>
-                        <input type="password" class="form-control" id="inputPassword4">
+                </section>
+                <!-- SECTION 2 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+                        <div class="image-holder">
+                            <img src="https://images.unsplash.com/photo-1590779033100-9f60a05a013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
+                        </div>
+                        <div class="form-content">
+                            <div class="form-header">
+                                <h3>FoodBank Registration</h3>
+                            </div>
+                            <p>FoodBank details</p>
+                            <div class="form-row">
+                                <div class="form-holder w-100">
+                                    <input type="text" placeholder="Address" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder">
+                                    <input type="text" placeholder="City" class="form-control">
+                                </div>
+                                <div class="form-holder">
+                                    <input type="text" placeholder="Zip Code" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder">
+                                    <input type="text" placeholder="Phone number" class="form-control">
+                                </div>
+                                <div class="select">
+                                    <div class="form-holder">
+                                        <div class="select-control">Municipalities</div>
+                                        <i class="zmdi zmdi-caret-down"></i>
+                                    </div>
+
+                                    <ul class="dropdown">
+                                        <li rel="Albert">Albert</li>
+                                        <li rel="Manitoba">Manitoba</li>
+                                        <li rel="New Brunswick">New Brunswick</li>
+                                        <li rel="Newfoundland and Labrador">Newfoundland and Labrador</li>
+                                        <li rel="Northwest Territories">Northwest Territories</li>
+                                        <li rel="Nova Scotia">Nova Scotia</li>
+                                        <li rel="Nunavut">Nunavut</li>
+                                        <li rel="Ontario">Ontario</li>
+                                        <li rel="Prince Edward Island">Prince Edward Island</li>
+                                        <li rel="Quebec">Quebec</li>
+                                        <li rel="Saskatchewan">Saskatchewan</li>
+                                        <li rel="Yukon">Yukon</li>
+                                    </ul>
+
+                                </div>
+                                <div class="form-holder">
+                                    <input type="text" placeholder="Website" class="form-control">
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="inputAddress">Address</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                </div>
-                <div class="form-group">
-                    <label for="inputAddress2">Address 2</label>
-                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputCity">City</label>
-                        <input type="text" class="form-control" id="inputCity">
+                </section>
+
+                <!-- SECTION 3 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+                        <div class="image-holder">
+                            <img src="https://images.unsplash.com/photo-1597179300169-dce9b5b530f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGtpZHMlMjBzbWlsaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                        </div>
+                        <div class="form-content">
+                            <div class="form-header">
+                                <h3>FoodBank Registration</h3>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder w-100">
+                                    <textarea name="info" id="" placeholder="Farm Info/Description" class="form-control" style="height: 50px;"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder w-5">
+                                    <input type="text" placeholder="capacity(kg)" name="capacity" class="form-control">
+                                </div>
+                                <div div class="form-holder w-10">
+                                <input type="text" placeholder="max distance(km)" name="distance" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder w-10"><span>Availabilities start:</span>
+                                    <input type="date" id="availabilities" data-toggle="tooltip" title="Available from" placeholder="start date" name="start_date" class="form-control">
+                                </div>
+                                <div class="form-holder w-10"><span>Availabilities end:</span>
+                                    <input type="date" placeholder="end date" name="end_date" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="checkbox-circle mt-24">
+                                <label>
+                                    <input type="checkbox" checked> Please accept <label for="modal-1" style="color:black">terms and conditions ?</label>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group col-md-4">
-                        <label for="inputState">State</label>
-                        <select id="inputState" class="form-control">
-                            <option selected>Choose...</option>
-                            <option>...</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-md-2">
-                        <label for="inputZip">Zip</label>
-                        <input type="text" class="form-control" id="inputZip">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                            Check me out
-                        </label>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary">Sign Up</button>
+                </section>
             </form>
-        </fieldset>
+        </div>
     </main>
-    <?php $this->view('Layout/Footer'); ?>
-    <?php $this->view('Layout/Scripts'); ?>
+    <!-- MODAL -->
+    <input class="modal-state" id="modal-1" type="checkbox" />
+    <div class="modal" style="z-index: 99;">
+        <label class="modal__bg" for="modal-1"></label>
+        <div class="modal__inner">
+            <label class="modal__close" for="modal-1"></label>
+            <h2>TERMS & CONDITION</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestiae, aut minima atque mollitia possimus! Nostrum eum dolorem possimus dolore atque voluptatum velit aspernatur mollitia modi nesciunt ad veritatis, tenetur quas! Sit libero quia voluptate ipsum iure dignissimos dolorem aliquam dolor mollitia facere, ratione repudiandae cumque fugiat ea deleniti sunt. Libero vel laboriosam perspiciatis praesentium ipsum nesciunt veritatis dolore? Placeat aliquam est dolor odio, cupiditate sequi deleniti culpa tenetur, tempore ipsa asperiores? At voluptatem, architecto deleniti modi velit corporis quae amet quaerat fugit possimus dolorem nisi officiis eaque porro quis eveniet praesentium doloremque, quisquam saepe voluptatibus dolore laboriosam minus. Eum.</p>
+        </div>
+    </div>
+    <!-- MODAL END -->
+    <?php
+    $this->view('Layout/Scripts');
+    ?>
+    <!-- JQUERY -->
+    <script src="/resources/scripts/jquery-3.3.1.min.js"></script>
+    <!-- JQUERY STEP -->
+    <script src="/resources//scripts/jquery.steps.js"></script>
+    <script src="/resources//scripts/main.js"></script>
+    <script src="/resources//scripts/script.js"></script>
+    <!-- Template created and distributed by Colorlib -->
 </body>
+
 </html>
