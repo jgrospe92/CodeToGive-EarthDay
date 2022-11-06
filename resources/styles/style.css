@@ -40,8 +40,11 @@ textarea {
   resize: none; }
 
 img {
-  height: 100%;
   max-width: 100%; }
+
+  .image-holder img {
+    height: 100%;
+  width: 100%; }
 
 .wrapper {
   height: 100vh;
@@ -263,7 +266,7 @@ textarea.form-control {
       content: '\f2ff';
       position: absolute;
       top: 14px;
-      left: 26px;
+      left: -46px;
       font-family: Material-Design-Iconic-Font; }
   .actions li:nth-child(2) a, .actions li:last-child a {
     margin-left: 20px; }
