@@ -1,10 +1,16 @@
-<?php $this->view('Layout/Header'); ?>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <?php
+    $this->view('Layout/Head');
+    ?>
+    <title>Foodbank Registration</title>
+</head>
 <body>
     <?php $this->view('Layout/Navigation'); ?>
     <main class="container mt-5">
         <fieldset>
-            <h2>Farm Profile</h2>
+            <h2>Foodbank Profile</h2>
             <form method="POST">
                 <div class="form-row">
                     <div class="form-group col-md-6">
@@ -49,7 +55,7 @@
                         </label>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Sign in</button>
+                <button type="submit" class="btn btn-primary">Sign Up</button>
             </form>
         </fieldset>
     </main>
