@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="/resources/styles/modal.css">
     <link rel="stylesheet" href="/resources/fonts/material-design-iconic-font/css/material-design-iconic-font.css">
     <title>Food Bank Registration</title>
+    <style>
+        .dropdown-menu {
+            max-height: 100px;
+            overflow-y: auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,7 +29,7 @@
                 <section>
                     <div class="inner">
                         <div class="image-holder ">
-                            <img src="https://images.unsplash.com/photo-1643321613219-6d50e1372c0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
+                            <img src="https://images.unsplash.com/photo-1590005024862-6b67679a29fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=440&q=80" alt="">
                         </div>
 
                         <div class="form-content">
@@ -81,23 +87,23 @@
                                 </div>
                                 <div class="select">
                                     <div class="form-holder">
-                                        <div class="select-control">Municipalities</div>
+                                        <div class="select-control">States</div>
                                         <i class="zmdi zmdi-caret-down"></i>
                                     </div>
-
-                                    <ul class="dropdown">
-                                        <li rel="Albert">Albert</li>
-                                        <li rel="Manitoba">Manitoba</li>
-                                        <li rel="New Brunswick">New Brunswick</li>
-                                        <li rel="Newfoundland and Labrador">Newfoundland and Labrador</li>
-                                        <li rel="Northwest Territories">Northwest Territories</li>
-                                        <li rel="Nova Scotia">Nova Scotia</li>
-                                        <li rel="Nunavut">Nunavut</li>
-                                        <li rel="Ontario">Ontario</li>
-                                        <li rel="Prince Edward Island">Prince Edward Island</li>
-                                        <li rel="Quebec">Quebec</li>
-                                        <li rel="Saskatchewan">Saskatchewan</li>
-                                        <li rel="Yukon">Yukon</li>
+                                    <ul class="dropdown dropdown-menu">
+                                        <li rel="AB">Albert</li>
+                                        <li rel="BC">British Colombia</li>
+                                        <li rel="MB">Manitoba</li>
+                                        <li rel="NB">New Brunswick</li>
+                                        <li rel="NL">Newfoundland and Labrador</li>
+                                        <li rel="NT">Northwest Territories</li>
+                                        <li rel="NS">Nova Scotia</li>
+                                        <li rel="NU">Nunavut</li>
+                                        <li rel="ON">Ontario</li>
+                                        <li rel="PE">Prince Edward Island</li>
+                                        <li rel="QC">Quebec</li>
+                                        <li rel="SK">Saskatchewan</li>
+                                        <li rel="YT">Yukon</li>
                                     </ul>
 
                                 </div>
@@ -123,16 +129,28 @@
                             </div>
                             <div class="form-row">
                                 <div class="form-holder w-100">
-                                    <textarea name="info" id="" placeholder="Farm Info/Description" class="form-control" style="height: 50px;"></textarea>
+                                    <textarea name="info" id="" placeholder="FoodBank Info/Description" class="form-control" style="height: 50px;"></textarea>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-holder w-5">
                                     <input type="text" placeholder="capacity(kg)" name="capacity" class="form-control">
                                 </div>
-                                <div div class="form-holder w-10">
-                                <input type="text" placeholder="max distance(km)" name="distance" class="form-control">
+                                <div class="select">
+                                    <div class="form-holder">
+                                        <div class="select-control">Max distance</div>
+                                        <i class="zmdi zmdi-caret-down"></i>
+                                    </div>
+                                    <ul class="dropdown dropdown-menu">
+                                        <li rel="10 km">10 km</li>
+                                        <li rel="25 km">25 km</li>
+                                        <li rel="50 km">50 km</li>
+                                        <li rel="75 km">75 km</li>
+                                        <li rel="100 km">100 km</li>
+                                    </ul>
+
                                 </div>
+                               
                             </div>
                             <div class="form-row">
                                 <div class="form-holder w-10"><span>Availabilities start:</span>

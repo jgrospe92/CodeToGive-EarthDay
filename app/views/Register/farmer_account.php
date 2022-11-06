@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="/resources/styles/modal.css">
     <link rel="stylesheet" href="/resources/fonts/material-design-iconic-font/css/material-design-iconic-font.css">
     <title>Farm Registration</title>
+    <style>
+        .dropdown-menu {
+            max-height: 100px;
+            overflow-y: auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -81,23 +87,23 @@
                                 </div>
                                 <div class="select">
                                     <div class="form-holder">
-                                        <div class="select-control">Municipalities</div>
+                                        <div class="select-control">Province</div>
                                         <i class="zmdi zmdi-caret-down"></i>
                                     </div>
-
-                                    <ul class="dropdown">
-                                        <li rel="Albert">Albert</li>
-                                        <li rel="Manitoba">Manitoba</li>
-                                        <li rel="New Brunswick">New Brunswick</li>
-                                        <li rel="Newfoundland and Labrador">Newfoundland and Labrador</li>
-                                        <li rel="Northwest Territories">Northwest Territories</li>
-                                        <li rel="Nova Scotia">Nova Scotia</li>
-                                        <li rel="Nunavut">Nunavut</li>
-                                        <li rel="Ontario">Ontario</li>
-                                        <li rel="Prince Edward Island">Prince Edward Island</li>
-                                        <li rel="Quebec">Quebec</li>
-                                        <li rel="Saskatchewan">Saskatchewan</li>
-                                        <li rel="Yukon">Yukon</li>
+                                    <ul class="dropdown dropdown-menu">
+                                        <li rel="AB">Albert</li>
+                                        <li rel="BC">British Colombia</li>
+                                        <li rel="MB">Manitoba</li>
+                                        <li rel="NB">New Brunswick</li>
+                                        <li rel="NL">Newfoundland and Labrador</li>
+                                        <li rel="NT">Northwest Territories</li>
+                                        <li rel="NS">Nova Scotia</li>
+                                        <li rel="NU">Nunavut</li>
+                                        <li rel="ON">Ontario</li>
+                                        <li rel="PE">Prince Edward Island</li>
+                                        <li rel="QC">Quebec</li>
+                                        <li rel="SK">Saskatchewan</li>
+                                        <li rel="YT">Yukon</li>
                                     </ul>
 
                                 </div>
