@@ -12,22 +12,21 @@
                 <span></span>
                 <span></span>
 
-
                 <ul id="menu">
                     <a href="#">
                         <li>Home</li>
                     </a>
                     <a href="#">
-                        <li>About</li>
+                        <li>Event</li>
                     </a>
                     <a href="#">
-                        <li>Info</li>
+                        <li>About</li>
                     </a>
                     <a href="#">
                         <li>Contact</li>
                     </a>
-                    <a href="#" target="_blank">
-                        <li>Show me more</li>
+                    <a href="#">
+                        <li>Login</li>
                     </a>
                 </ul>
             </div>
