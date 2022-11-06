@@ -1,9 +1,15 @@
-<!-- STYLE CSS -->
-<link rel="stylesheet" href="/resources/styles/mainStyles.css">
-<link rel="stylesheet" href="/resources/styles/style.css">
-<link rel="stylesheet" href="/resources/styles/modal.css">
-<link rel="stylesheet" href="/resources/fonts/material-design-iconic-font/css/material-design-iconic-font.css">
-
+<!doctype html>
+<html lang="en">
+<head>
+    <?php
+    $this->view('Layout/Head');
+    ?>
+    <link rel="stylesheet" href="/resources/styles/style.css">
+    <link rel="stylesheet" href="/resources/styles/mainStyles.css">
+    <link rel="stylesheet" href="/resources/styles/modal.css">
+    <link rel="stylesheet" href="/resources/fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+    <title>Farm Registration</title>
+</head>
 
 <body>
     <?php $this->view('Layout/Navigation'); ?>
@@ -148,6 +154,9 @@
   </div>
 </div>
 <!-- MODAL END -->
+    <?php
+    $this->view('Layout/Scripts');
+    ?>
     <!-- JQUERY -->
     <script src="/resources/scripts/jquery-3.3.1.min.js"></script>
     <!-- JQUERY STEP -->

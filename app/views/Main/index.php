@@ -4,6 +4,9 @@
     <?php
     $this->view('Layout/Head');
     ?>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/"/>
+    <link rel="stylesheet" href="/resources/styles/carousel.css">
+    <link rel="stylesheet" href="/resources/styles/bootstrap.min.css">
     <title>U Glean</title>
 </head>
 <style>
