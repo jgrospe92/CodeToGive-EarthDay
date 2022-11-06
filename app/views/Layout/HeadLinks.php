@@ -4,3 +4,4 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 <link rel="stylesheet" href="/resources/styles/mainStyles.css">
 <!-- <link rel="stylesheet" href="/resources/styles/bootstrap.min.css"> -->
+<script src="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
