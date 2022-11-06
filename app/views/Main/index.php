@@ -103,7 +103,7 @@
                         here!
                     </p>
                     <p>
-                        <a class="btn btn-secondary" href="/Main/farmer">Sign In &raquo;</a>
+                        <a class="btn btn-secondary" href="/Register/account">Sign In &raquo;</a>
                     </p>
                 </div>
                 <!-- /.col-lg-4 -->
@@ -122,9 +122,6 @@
                 </div>
                 <!-- /.col-lg-4 -->
             </div>
-            <!-- /.row -->
-
-            <!-- START THE FEATURETTES -->
 
             <!-- START THE FEATURETTES -->
 
