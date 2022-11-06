@@ -43,7 +43,7 @@
                             <h2 class="card-title text-center">Register to be a Gleaner</a></h2>
                             <hr >
                                 <div class="card-body py-md-4">
-                                    <form _lpchecked="1">
+                                    <form _lpchecked="1" action='' method='post'>
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="name" placeholder="Name">
                                         </div>
