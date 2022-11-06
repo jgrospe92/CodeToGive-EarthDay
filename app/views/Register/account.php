@@ -1,190 +1,159 @@
-<?php $this->view('Layout/Header'); ?>
-<style>
-    *,
-    *:before,
-    *:after {
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-    }
+<!-- STYLE CSS -->
+<link rel="stylesheet" href="/resources/styles/mainStyles.css">
+<link rel="stylesheet" href="/resources/styles/style.css">
+<link rel="stylesheet" href="/resources/styles/modal.css">
+<link rel="stylesheet" href="/resources/fonts/material-design-iconic-font/css/material-design-iconic-font.css">
 
-    body {
-        font-family: 'Nunito', sans-serif;
-        color: #384047;
-    }
-
-    form {
-        max-width: 300px;
-        margin: 10px auto;
-        padding: 10px 20px;
-        background: #f4f7f8;
-        border-radius: 8px;
-    }
-
-    h1 {
-        margin: 0 0 30px 0;
-        text-align: center;
-    }
-
-    input[type="text"],
-    input[type="password"],
-    input[type="date"],
-    input[type="datetime"],
-    input[type="email"],
-    input[type="number"],
-    input[type="search"],
-    input[type="tel"],
-    input[type="time"],
-    input[type="url"],
-    textarea,
-    select {
-        background: rgba(255, 255, 255, 0.1);
-        border: none;
-        font-size: 16px;
-        height: auto;
-        margin: 0;
-        outline: 0;
-        padding: 15px;
-        width: 100%;
-        background-color: #e8eeef;
-        color: #8a97a0;
-        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
-        margin-bottom: 30px;
-    }
-
-    input[type="radio"],
-    input[type="checkbox"] {
-        margin: 0 4px 8px 0;
-    }
-
-    select {
-        padding: 6px;
-        height: 32px;
-        border-radius: 2px;
-    }
-
-    button {
-        padding: 19px 39px 18px 39px;
-        color: #FFF;
-        background-color: #4bc970;
-        font-size: 18px;
-        text-align: center;
-        font-style: normal;
-        border-radius: 5px;
-        width: 100%;
-        border: 1px solid #3ac162;
-        border-width: 1px 1px 3px;
-        box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
-        margin-bottom: 10px;
-    }
-
-    fieldset {
-        margin-bottom: 30px;
-        border: none;
-    }
-
-    legend {
-        font-size: 1.4em;
-        margin-bottom: 10px;
-    }
-
-    label {
-        display: block;
-        margin-bottom: 8px;
-    }
-
-    label.light {
-        font-weight: 300;
-        display: inline;
-    }
-
-    .number {
-        background-color: #5fcf80;
-        color: #fff;
-        height: 30px;
-        width: 30px;
-        display: inline-block;
-        font-size: 0.8em;
-        margin-right: 4px;
-        line-height: 30px;
-        text-align: center;
-        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-        border-radius: 100%;
-    }
-
-    @media screen and (min-width: 480px) {
-
-        form {
-            max-width: 480px;
-        }
-
-    }
-</style>
 
 <body>
-<?php $this->view('Layout/Navigation'); ?>
-    <form action="" method="post">
+    <?php $this->view('Layout/Navigation'); ?>
+    <main class="container-fluid">
+        <div class="wrapper">
+            <!-- FORM STARTS -->
+            <form method="POST" action="" id="wizard">
+                <!-- SECTION 1 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+                        <div class="image-holder ">
+                            <img src="https://images.unsplash.com/photo-1492496913980-501348b61469?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
+                        </div>
 
-        <h1>Sign Up</h1>
+                        <div class="form-content">
+                            <div class="form-header">
+                                <h3>Farm Registration</h3>
+                            </div>
+                            <p>Account</p>
+                            <div class="form-row d-flex justify-content-center">
+                                <div class="form-holder">
+                                    <input type="text" name="email" placeholder="Enter your email" class="form-control" required>
+                                </div>
 
-        <fieldset>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder">
+                                    <input type="text" name="password" placeholder="Enter Password" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder">
+                                    <input type="text" name="password" placeholder="confirm password" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- SECTION 2 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+                        <div class="image-holder">
+                            <img src="/resources//images/form-wizard-1.jpg" alt="">
+                        </div>
+                        <div class="form-content">
+                            <div class="form-header">
+                                <h3>Farm Registration</h3>
+                            </div>
+                            <p>Farm details</p>
+                            <div class="form-row">
+                                <div class="form-holder w-100">
+                                    <input type="text" placeholder="Address" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder">
+                                    <input type="text" placeholder="City" class="form-control">
+                                </div>
+                                <div class="form-holder">
+                                    <input type="text" placeholder="Zip Code" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder">
+                                    <input type="text" placeholder="Phone number" class="form-control">
+                                </div>
+                                <div class="select">
+                                    <div class="form-holder">
+                                        <div class="select-control">Municipalities</div>
+                                        <i class="zmdi zmdi-caret-down"></i>
+                                    </div>
 
-            <legend><span class="number">1</span> Your basic info</legend>
+                                    <ul class="dropdown">
+                                        <li rel="Albert">Albert</li>
+                                        <li rel="Manitoba">Manitoba</li>
+                                        <li rel="New Brunswick">New Brunswick</li>
+                                        <li rel="Newfoundland and Labrador">Newfoundland and Labrador</li>
+                                        <li rel="Northwest Territories">Northwest Territories</li>
+                                        <li rel="Nova Scotia">Nova Scotia</li>
+                                        <li rel="Nunavut">Nunavut</li>
+                                        <li rel="Ontario">Ontario</li>
+                                        <li rel="Prince Edward Island">Prince Edward Island</li>
+                                        <li rel="Quebec">Quebec</li>
+                                        <li rel="Saskatchewan">Saskatchewan</li>
+                                        <li rel="Yukon">Yukon</li>
+                                    </ul>
 
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="user_name">
+                                </div>
+                                <div class="form-holder">
+                                <input type="text" placeholder="Website" class="form-control">
+                                </div>
+                            </div>
 
-            <label for="mail">Email:</label>
-            <input type="email" id="mail" name="user_email">
+                        </div>
+                    </div>
+                </section>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="user_password">
-
-            <label>Age:</label>
-            <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Under 13</label><br>
-            <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">13 or Older</label>
-
-        </fieldset>
-
-        <fieldset>
-
-            <legend><span class="number">2</span> Your profile</legend>
-
-            <label for="bio">Biography:</label>
-            <textarea id="bio" name="user_bio"></textarea>
-
-            <label for="job">Job role:</label>
-            <select id="job" name="user_job">
-                <optgroup label="Web">
-                    <option value="frontend_developer">Front-End Developer</option>
-                    <option value="php_developer">PHP Developer</option>
-                    <option value="python_developer">Python Developer</option>
-                    <option value="rails_developer">Rails Developer</option>
-                    <option value="web_designer">Web Designer</option>
-                    <option value="wordpress_developer">WordPress Developer</option>
-                </optgroup>
-                <optgroup label="Mobile">
-                    <option value="android_developer">Android Developer</option>
-                    <option value="ios_developer">iOS Developer</option>
-                    <option value="mobile_designer">Mobile Designer</option>
-                </optgroup>
-                <optgroup label="Business">
-                    <option value="business_owner">Business Owner</option>
-                    <option value="freelancer">Freelancer</option>
-                </optgroup>
-            </select>
-
-            <label>Interests:</label>
-            <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Development</label><br>
-            <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Design</label><br>
-            <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Business</label>
-
-        </fieldset>
-
-        <button type="submit">Sign Up</button>
-
-    </form>
-
+                <!-- SECTION 3 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+                        <div class="image-holder">
+                            <img src="https://images.unsplash.com/photo-1558818498-28c1e002b655?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
+                        </div>
+                        <div class="form-content">
+                            <div class="form-header">
+                                <h3>Farm Registration</h3>
+                            </div>
+                            <p>Additional details</p>
+                            <div class="form-row">
+								<div class="form-holder w-100">
+									<textarea name="" id="" placeholder="Farm Info/Description" class="form-control" style="height: 50px;"></textarea>
+								</div>
+							</div>
+                            <div class="form-row">
+                                <div class="form-holder w-100">
+                                <label class="col-sm-2 col-form-label">Profile image:<input class='form-control' type="file" name="picture" id="picture" /><label>
+                                </div>
+                            </div>
+                            <div class="checkbox-circle mt-24">
+                                <label>
+                                    <input type="checkbox" checked> Please accept <label for="modal-1" style="color:black">terms and conditions ?</label>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </form>
+        </div>
+    </main>
+<!-- MODAL -->
+<input class="modal-state" id="modal-1" type="checkbox" />
+<div class="modal" style="z-index: 99;">
+  <label class="modal__bg" for="modal-1"></label>
+  <div class="modal__inner">
+    <label class="modal__close" for="modal-1"></label>
+    <h2>TERMS & CONDITION</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestiae, aut minima atque mollitia possimus! Nostrum eum dolorem possimus dolore atque voluptatum velit aspernatur mollitia modi nesciunt ad veritatis, tenetur quas! Sit libero quia voluptate ipsum iure dignissimos dolorem aliquam dolor mollitia facere, ratione repudiandae cumque fugiat ea deleniti sunt. Libero vel laboriosam perspiciatis praesentium ipsum nesciunt veritatis dolore? Placeat aliquam est dolor odio, cupiditate sequi deleniti culpa tenetur, tempore ipsa asperiores? At voluptatem, architecto deleniti modi velit corporis quae amet quaerat fugit possimus dolorem nisi officiis eaque porro quis eveniet praesentium doloremque, quisquam saepe voluptatibus dolore laboriosam minus. Eum.</p>
+  </div>
+</div>
+<!-- MODAL END -->
+    <!-- JQUERY -->
+    <script src="/resources/scripts/jquery-3.3.1.min.js"></script>
+    <!-- JQUERY STEP -->
+    <script src="/resources//scripts/jquery.steps.js"></script>
+    <script src="/resources//scripts/main.js"></script>
+    <!-- Template created and distributed by Colorlib -->
 </body>
 
 </html>
