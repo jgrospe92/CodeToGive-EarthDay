@@ -1,16 +1,8 @@
 <!-- STYLE CSS -->
-<!doctype html>
-<html lang="en">
-<head>
-    <?php
-    $this->view('Layout/Head');
-    ?>
-    <link rel="stylesheet" href="/resources/styles/style.css">
-    <link rel="stylesheet" href="/resources/styles/modal.css">
-    <link rel="stylesheet" href="/resources/fonts/material-design-iconic-font/css/material-design-iconic-font.css">
-    <title>Farm Registration</title>
-</head>
-
+<link rel="stylesheet" href="/resources/styles/mainStyles.css">
+<link rel="stylesheet" href="/resources/styles/style.css">
+<link rel="stylesheet" href="/resources/styles/modal.css">
+<link rel="stylesheet" href="/resources/fonts/material-design-iconic-font/css/material-design-iconic-font.css">
 
 
 <body>

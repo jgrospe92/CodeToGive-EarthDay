@@ -110,7 +110,7 @@
                         here!
                     </p>
                     <p>
-                        <a class="btn btn-secondary" href="/Register/farmer_account">Sign Up &raquo;</a>
+                        <a class="btn btn-secondary" href="/Register/farmer_account">Sign In &raquo;</a>
                     </p>
                 </div>
                 <!-- /.col-lg-4 -->
