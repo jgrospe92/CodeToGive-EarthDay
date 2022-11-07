@@ -44,6 +44,10 @@
             font-size: 3.5rem;
         }
     }
+    .container {
+        border: 1 solid black;
+        padding: 5rem;
+    }
 </style>
 
 <body>
