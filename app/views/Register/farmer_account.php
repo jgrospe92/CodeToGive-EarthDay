@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="/resources/styles/modal.css">
     <link rel="stylesheet" href="/resources/fonts/material-design-iconic-font/css/material-design-iconic-font.css">
     <title>Farm Registration</title>
+    <style>
+        .dropdown-menu {
+            max-height: 100px;
+            overflow-y: auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -41,7 +47,8 @@
                             </div>
                             <div class="form-row">
                                 <div class="form-holder">
-                                    <input type="password" name="password" placeholder="Enter Password" class="form-control" required>
+
+                                    <input id="password" type="text" name="password" placeholder="Enter Password" class="form-control" required>
                                 </div>
                                 <div class="form-holder">
                                     <input type="tel" placeholder="Phone number" class="form-control" name="phone_number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
@@ -49,7 +56,13 @@
                             </div>
                             <div class="form-row">
                                 <div class="form-holder">
-                                    <input type="password" name="confirm_password" placeholder="Confirm password" class="form-control" required>
+                                    <input id="confirm" type="text" name="password" placeholder="confirm password" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div id="password_error" style="color:red; visibility: hidden;" role="alert">
+                                    passwords do not match!
+
                                 </div>
                             </div>
                         </div>
@@ -89,7 +102,6 @@
                                         <div class="select-control">Province</div>
                                         <i class="zmdi zmdi-caret-down"></i>
                                     </div>
-
                                     <ul class="dropdown">
                                         <li rel="AB">Alberta</li>
                                         <li rel="BC">British Columbia</li>

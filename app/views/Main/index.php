@@ -163,7 +163,7 @@
 
             <hr class="featurette-divider">
 
-            <div class="row featurette">
+            <div id="event" class="row featurette">
                 <div class="col-md-7 order-md-2">
                     <h2 class="featurette-heading">FOR APRIL 22, JOIN THE MOVEMENT!<span class="text-muted">See for yourself.</span></h2>
                     <p class="lead">Check out our suggestions for activities and initiatives to join near you in our online calendar!</p>

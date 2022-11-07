@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="/resources/styles/modal.css">
     <link rel="stylesheet" href="/resources/fonts/material-design-iconic-font/css/material-design-iconic-font.css">
     <title>Food Bank Registration</title>
+    <style>
+        .dropdown-menu {
+            max-height: 100px;
+            overflow-y: auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,7 +29,7 @@
                 <section>
                     <div class="inner">
                         <div class="image-holder ">
-                            <img src="https://images.unsplash.com/photo-1643321613219-6d50e1372c0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
+                            <img src="https://images.unsplash.com/photo-1590005024862-6b67679a29fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=440&q=80" alt="">
                         </div>
 
                         <div class="form-content">
@@ -41,12 +47,17 @@
                             </div>
                             <div class="form-row">
                                 <div class="form-holder">
-                                    <input type="password" name="password" placeholder="Enter password" class="form-control" required>
+                                    <input id="password" type="text" name="password" placeholder="Enter Password" class="form-control" required>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-holder">
-                                    <input type="password" name="password" placeholder="Confirm password" class="form-control" required>
+                                    <input id="confirm" type="text" name="password" placeholder="confirm password" class="form-control" required>
+                                </div>
+                            </div>
+                              <div class="form-row">
+                                <div id="password_error" style="color:red; visibility: hidden;" role="alert">
+                                    passwords do not match!
                                 </div>
                             </div>
                         </div>
@@ -126,16 +137,36 @@
                             </div>
                             <div class="form-row">
                                 <div class="form-holder w-100">
-                                    <textarea name="info" id="" placeholder="Farm Info/Description" class="form-control" style="height: 50px;"></textarea>
+                                    <textarea name="info" id="" placeholder="FoodBank Info/Description" class="form-control" style="height: 50px;"></textarea>
                                 </div>
                             </div>
                             <div class="form-row">
-                                <div div class="form-holder w-10">
-                                <input type="text" placeholder="Max distance(km)" name="distance" class="form-control">
+
+                                <div class="form-holder w-5">
+                                    <input type="text" placeholder="capacity(kg)" name="capacity" class="form-control">
                                 </div>
-                                <div class="form-holder">
-                                    <input type="url" name="website" placeholder="Website" class="form-control">
+                                <div class="select">
+                                    <div class="form-holder">
+                                        <div class="select-control">Max distance</div>
+                                        <i class="zmdi zmdi-caret-down"></i>
+                                    </div>
+                                    <ul class="dropdown dropdown-menu">
+                                        <li rel="10 km">10 km</li>
+                                        <li rel="25 km">25 km</li>
+                                        <li rel="50 km">50 km</li>
+                                        <li rel="75 km">75 km</li>
+                                        <li rel="100 km">100 km</li>
+                                    </ul>
+
+
+                             //   <div div class="form-holder w-10">
+                              //  <input type="text" placeholder="Max distance(km)" name="distance" class="form-control">
+                              //  </div>
+                               // <div class="form-holder">
+                                //    <input type="url" name="website" placeholder="Website" class="form-control">
+
                                 </div>
+                               
                             </div>
                             <div class="form-row">
                                 <div class="form-holder w-10"><span>Availabilities start:</span>

@@ -5,9 +5,6 @@ class Main extends \app\core\Controller {
     public function index() {
         $this->view('Main/index');
     }
-
-
-
     public function gleaner_Profile_edit(){
         $this->view('Gleaner/gleaner_Profile_edit');
     }
