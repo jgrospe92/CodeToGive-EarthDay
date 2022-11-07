@@ -21,13 +21,16 @@ class Register extends \app\core\Controller {
 
         $account = new \app\models\account();
         $account->email = $_account["email"];
-        $account->password_hash = password_hash($_account["password"],PASSWORD_DEFAULT);
-        $account->insert();
+        $accountCheck = $account->getByEmail();
 
-        $account = $account->getByEmail();
+        if(!$accountCheck->password_hash) {
+            $account->password_hash = password_hash($_account["password"],PASSWORD_DEFAULT);
+            $account->insert();
+        } else if(!password_verify($_account["password"],$accountCheck->password_hash))
+            header('location:/Register/farmer_account?error=email already exists and password is incorrect');
 
         $farmer = new \app\models\farmer();
-        $farmer->account_id = $account->account_id;
+        $farmer->account_id = $accountCheck->account_id;
         $farmer->name = $_farmer["name"];
         $farmer->phone = $_farmer["phone"];
         $farmer->info = $_farmer["info"];
@@ -38,8 +41,6 @@ class Register extends \app\core\Controller {
         $farmer->city = $_farmer["city"];
         $farmer->province = $_farmer["province"];
         $farmer->postal_code = $_farmer["postal_code"];
-        $farmer->availabilities_start = $_farmer["availabilities_start"];
-        $farmer->availabilities_end = $_farmer["availabilities_end"];
         $farmer->insert();
     }
     public function register_gleaner() {
@@ -48,18 +49,22 @@ class Register extends \app\core\Controller {
 
         $account = new \app\models\account();
         $account->email = $_account["email"];
-        $account->password_hash = password_hash($_account["password"],PASSWORD_DEFAULT);
-        $account->insert();
+        $accountCheck = $account->getByEmail();
 
-        $account = $account->getByEmail();
+        if(!$accountCheck->password_hash) {
+            $account->password_hash = password_hash($_account["password"],PASSWORD_DEFAULT);
+            $account->insert();
+        } else if(!password_verify($_account["password"],$accountCheck->password_hash))
+                header('location:/Register/gleaner?error=email already exists and password is incorrect');
+
+
 
         $gleaner = new \app\models\gleaner();
-        $gleaner->account_id = $account->account_id;
+        $gleaner->account_id = $accountCheck->account_id;
         $gleaner->name = $_gleaner["name"];
         $gleaner->username = $_gleaner["username"];
         $gleaner->bio = $_gleaner["bio"];
         $gleaner->insert();
-        echo $account->password_hash;
 
     }
     public function register_foodbank() {
@@ -68,13 +73,16 @@ class Register extends \app\core\Controller {
 
         $account = new \app\models\account();
         $account->email = $_account["email"];
-        $account->password_hash = password_hash($_account["password"],PASSWORD_DEFAULT);
-        $account->insert();
+        $accountCheck = $account->getByEmail();
 
-        $account = $account->getByEmail();
+        if(!$accountCheck->password_hash) {
+            $account->password_hash = password_hash($_account["password"],PASSWORD_DEFAULT);
+            $account->insert();
+        } else if(!password_verify($_account["password"],$accountCheck->password_hash))
+            header('location:/Register/foodbank?error=email already exists and password is incorrect');
 
         $foodbank = new \app\models\foodbank();
-        $foodbank->account_id = $account->account_id;
+        $foodbank->account_id = $accountCheck->account_id;
         $foodbank->name = $_foodbank["name"];
         $foodbank->phone = $_foodbank["phone"];
         $foodbank->info = $_foodbank["info"];
