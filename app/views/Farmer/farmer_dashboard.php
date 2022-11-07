@@ -132,7 +132,7 @@
                                             </td>
                                             <td>22 October 2022</td>
                                             <td>
-                                                <a href=""><span class="g-action bi bi-pencil-fill"> </span></a>
+                                                <a href=""><span class="g-action "> </span></a>
                                                 <a href=""><span class="g-action fa fa-eye"></span></a>
                                                 <a href=""><span class="g-action fa fa-trash"></span></a>
                                             </td>

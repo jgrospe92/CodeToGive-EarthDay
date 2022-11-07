@@ -28,7 +28,7 @@ class Register extends \app\core\Controller {
             $account->insert();
         } else if(!password_verify($_account["password"],$accountCheck->password_hash))
             header('location:/Register/farmer_account?error=email already exists and password is incorrect');
-
+        
         $farmer = new \app\models\farmer();
         $farmer->account_id = $accountCheck->account_id;
         $farmer->name = $_farmer["name"];

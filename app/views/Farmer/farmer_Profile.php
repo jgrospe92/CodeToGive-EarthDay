@@ -2,21 +2,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-    .checked {
-      color: orange;
-    }
-    </style>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <?php
+    $this->view('Layout/Head');
+    ?>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/"/>
+    <link rel="stylesheet" href="/resources/styles/carousel.css">
+    <link rel="stylesheet" href="/resources/styles/bootstrap.min.css">
+    <title>U Glean</title>
 </head>
-<?php $this->view('Layout/Header'); ?>
+<style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .text-color h1, .text-color p{
+            color: white;
+      }
+
+      .checked {
+        color:orange
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
 <body>
-    
-<?php $this->view('Layout/Navigation'); ?>
+    <?php $this->view('Layout/Navigation'); ?>
 
 <section style="background-color: #eee;">
   <div class="container py-5">
@@ -24,7 +43,7 @@
       <div class="col">
         <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
         <h3 class="p-3 text-primary font-italic text-center ">
-          your profile
+          Farmer profile
         <h3> 
         </nav>
       </div>
