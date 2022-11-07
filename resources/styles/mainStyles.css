@@ -36,6 +36,7 @@ header > nav {
   justify-content: space-around;
 }
 header > nav > * {
+  aspect-ratio: 1/1;
   max-height: 110%;
 }
 
