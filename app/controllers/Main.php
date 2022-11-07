@@ -37,7 +37,6 @@ class Main extends \app\core\Controller {
     public function foodBank_Profile(){
         $this->view('FoodBank/foodBank_Profile');
     }
-
     public function farmerLogin(){ 
         $this->view('Login/farmerLogin');
     }
@@ -56,4 +55,11 @@ class Main extends \app\core\Controller {
     public function gleanerRegister(){ 
         $this->view('Register/gleanerRegister');
     }
+    public function createGroup(){ 
+        $this->view('Groups/createGroup');
+    }
+    public function editGroup(){ 
+        $this->view('Groups/editGroup');
+    }
+
 }

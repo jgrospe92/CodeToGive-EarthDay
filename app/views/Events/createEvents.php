@@ -16,6 +16,7 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
     crossorigin="anonymous"
     /> 
+    <link href="../styles/bootstrap.min.css" rel="stylesheet" />
     <!-- <link href="../styles/bootstrap.min.css" rel="stylesheet" /> -->
     <style>
         body {
