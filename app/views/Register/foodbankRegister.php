@@ -177,5 +177,3 @@
     <script src="/resources//scripts/script.js"></script>
     <!-- Template created and distributed by Colorlib -->
 </body>
-
-</html>
