@@ -32,18 +32,19 @@
                             <p>Account</p>
                             <div class="form-row d-flex justify-content-center">
                                 <div class="form-holder">
-                                    <input type="text" name="email" placeholder="Enter your email" class="form-control" required>
+                                    <input type="email" name="email" placeholder="Enter email" class="form-control" required>
+                                </div>
+                                <div class="form-holder">
+                                    <input type="text" name="username" placeholder="Enter username" class="form-control" required>
                                 </div>
 
                             </div>
                             <div class="form-row">
                                 <div class="form-holder">
-                                    <input type="text" name="password" placeholder="Enter Password" class="form-control" required>
+                                    <input type="password" name="password" placeholder="Enter Password" class="form-control" required>
                                 </div>
-                            </div>
-                            <div class="form-row">
                                 <div class="form-holder">
-                                    <input type="text" name="password" placeholder="confirm password" class="form-control" required>
+                                    <input type="password" name="password" placeholder="Confirm password" class="form-control" required>
                                 </div>
                             </div>
                         </div>
@@ -62,18 +63,13 @@
                             </div>
                             <p>Gleaner details</p>
                             <div class="form-row">
-                                <div class="form-holder w-100">
-                                    <input type="text" placeholder="first name" name="first_name" class="form-control">
+                                <div class="form-holder">
+                                    <input type="text" placeholder="First name" name="first_name" class="form-control">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-holder">
-                                    <input type="text" placeholder="last name"  name="last_name" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-holder">
-                                    <input type="text" placeholder="Phone number" class="form-control">
+                                    <input type="text" placeholder="Last name"  name="last_name" class="form-control">
                                 </div>
                             </div>
 
@@ -100,7 +96,7 @@
 							</div>
                             <div class="checkbox-circle mt-24">
                                 <label>
-                                    <input type="checkbox" checked> Please accept <label for="modal-1" style="color:black">terms and conditions ?</label>
+                                    <input type="checkbox">Do you accept the <label for="modal-1" style="color:black">terms and conditions?</label>
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
@@ -130,7 +126,10 @@
     <script src="/resources//scripts/jquery.steps.js"></script>
     <script src="/resources//scripts/main.js"></script>
     <script src="/resources//scripts/script.js"></script>
+    <script src="/resources/scripts/ajax.js"></script>
+
     <!-- Template created and distributed by Colorlib -->
+    <input type="hidden" name="registerPage" value="gleaner">
 </body>
 
 </html>

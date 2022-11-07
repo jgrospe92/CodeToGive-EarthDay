@@ -181,6 +181,7 @@
     <script src="/resources//scripts/script.js"></script>
     <script src="/resources/scripts/ajax.js"></script>
     <!-- Template created and distributed by Colorlib -->
+    <input type="hidden" name="registerPage" value="farmer">
 </body>
 
 </html>

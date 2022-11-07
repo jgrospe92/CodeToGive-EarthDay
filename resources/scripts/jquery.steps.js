@@ -1067,7 +1067,7 @@ function renderPagination(wizard, options, state)
 
         if (options.enableFinishButton)
         {
-            buttons += buttonTemplate.format("finish", options.labels.finish,"registerFarmer()");
+            buttons += buttonTemplate.format("finish", options.labels.finish,"register()");
         }
 
         if (options.enableCancelButton)
