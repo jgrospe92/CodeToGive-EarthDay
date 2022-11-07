@@ -25,15 +25,16 @@
                         <li>Contact</li>
                     </a>
                     <?php 
-                    
-                    
-                    
-                    
-                    
+                        if (isset($_SESSION['account_id'])){
+                            $link = "href='/Login/logout'";  
+                            $li = "Logout";
+                        } else {
+                            $link = "href='/Login/gleaner'";
+                           $li = "Login";
+                        }
                     ?>
-
-                    <a href="\Login\gleaner">
-                        <li>Login</li>
+                    <a <?= $link ?>>
+                        <li><?= $li ?></li>
                     </a>
                 </ul>
             </div>
