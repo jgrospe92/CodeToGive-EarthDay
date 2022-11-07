@@ -51,4 +51,8 @@ class Main extends \app\core\Controller {
     public function createEvents(){ 
         $this->view('Events/createEvents');
     }
+
+    public function gleanerRegister(){ 
+        $this->view('Register/gleanerRegister');
+    }
 }
