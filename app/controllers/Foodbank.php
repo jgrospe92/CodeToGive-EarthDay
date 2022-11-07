@@ -7,5 +7,8 @@ class Foodbank extends \app\core\Controller {
     public function foodbank_dashboard(){
         $this->view('Foodbank/foodbank_dashboard');
     }
+     public function delivery(){
+        $this->view('Foodbank/delivery');
+    }
 
 }
