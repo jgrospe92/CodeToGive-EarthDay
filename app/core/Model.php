@@ -6,9 +6,7 @@ class Model {
 
     public function __construct() {
         $server = 'localhost';
-
-        // CHANGE THIS TO THE DATABASE NAME
-        $dbname = 'uglean';
+        $dbname = 'earthday';
         $username = 'root';
         $password = '';
 

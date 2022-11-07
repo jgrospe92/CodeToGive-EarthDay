@@ -4,6 +4,9 @@ namespace app\models;
 
 class farmer extends \app\core\Model
 {
+    private $profilePic = null;
+    private $rating = null;
+
     public function insert() {
         $SQL = "INSERT INTO farmer (account_id,name,phone,profilePic,info,link,rating,region,municipality,address,city,province,postal_code,availabilities_start,availabilities_end) VALUES (:account_id,:name,:phone,:profilePic,:info,:link,:rating,:region,:municipality,:address,:city,:province,:postal_code,:availabilities_start,:availabilities_end)";
         $STMT = self::$_connection->prepare($SQL);
