@@ -39,9 +39,11 @@
                             <p>Account</p>
                             <div class="form-row d-flex justify-content-center">
                                 <div class="form-holder">
-                                    <input type="text" name="email" placeholder="Enter your email" class="form-control" required>
+                                    <input type="email" name="email" placeholder="Enter your email" class="form-control" required>
                                 </div>
-
+                                <div class="form-holder">
+                                    <input type="tel" name="phone" placeholder="Phone number" class="form-control">
+                                </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-holder">
@@ -75,29 +77,29 @@
                             <p>FoodBank details</p>
                             <div class="form-row">
                                 <div class="form-holder w-100">
-                                    <input type="text" placeholder="Address" class="form-control">
+                                    <input type="text" name="address" placeholder="Address" class="form-control">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-holder">
-                                    <input type="text" placeholder="City" class="form-control">
+                                    <input type="text" name="city" placeholder="City" class="form-control">
                                 </div>
                                 <div class="form-holder">
-                                    <input type="text" placeholder="Zip Code" class="form-control">
+                                    <input type="text" name="postal_code" placeholder="Postal Code" class="form-control">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-holder">
-                                    <input type="text" placeholder="Phone number" class="form-control">
+                                    <input type="text" name="region" placeholder="Region" class="form-control">
                                 </div>
                                 <div class="select">
                                     <div class="form-holder">
-                                        <div class="select-control">States</div>
+                                        <div class="select-control">Province</div>
                                         <i class="zmdi zmdi-caret-down"></i>
                                     </div>
-                                    <ul class="dropdown dropdown-menu">
-                                        <li rel="AB">Albert</li>
-                                        <li rel="BC">British Colombia</li>
+
+                                    <ul class="dropdown">
+                                        <li rel="AB">Alberta</li>
                                         <li rel="MB">Manitoba</li>
                                         <li rel="NB">New Brunswick</li>
                                         <li rel="NL">Newfoundland and Labrador</li>
@@ -113,8 +115,9 @@
 
                                 </div>
                                 <div class="form-holder">
-                                    <input type="text" placeholder="Website" class="form-control">
+                                    <input type="text" name="municipality" placeholder="Municipality" class="form-control">
                                 </div>
+
                             </div>
 
                         </div>
@@ -138,6 +141,7 @@
                                 </div>
                             </div>
                             <div class="form-row">
+
                                 <div class="form-holder w-5">
                                     <input type="text" placeholder="capacity(kg)" name="capacity" class="form-control">
                                 </div>
@@ -154,6 +158,13 @@
                                         <li rel="100 km">100 km</li>
                                     </ul>
 
+
+                             //   <div div class="form-holder w-10">
+                              //  <input type="text" placeholder="Max distance(km)" name="distance" class="form-control">
+                              //  </div>
+                               // <div class="form-holder">
+                                //    <input type="url" name="website" placeholder="Website" class="form-control">
+
                                 </div>
                                
                             </div>
@@ -168,7 +179,7 @@
 
                             <div class="checkbox-circle mt-24">
                                 <label>
-                                    <input type="checkbox" checked> Please accept <label for="modal-1" style="color:black">terms and conditions ?</label>
+                                    <input type="checkbox">Do you accept the <label for="modal-1" style="color:black">terms and conditions?</label>
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
