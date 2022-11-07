@@ -4,6 +4,7 @@ namespace app\controllers;
 
 class Login extends \app\core\Controller
 {
+
     public function gleaner() {
         if(isset($_POST['login'])) {
             $email = $_POST['email_input'];
@@ -17,6 +18,8 @@ class Login extends \app\core\Controller
                 $gleaner = new \app\models\gleaner();
                 $gleaner = $gleaner->getByAccount($account->account_id);
                 $_SESSION['gleaner_id'] = $gleaner->gleaner_id;
+                $_SESSION['account_id'] = $account->account_id;
+
                 header('location:/Gleaner/gleaner_feed');
             } else {
                 header('location:/Login/gleaner?error=Incorrect password');
@@ -36,6 +39,7 @@ class Login extends \app\core\Controller
                 $farmer = new \app\models\gleaner();
                 $farmer = $farmer->getByAccount($account->account_id);
                 $_SESSION['farmer_id'] = $farmer->farmer_id;
+                $_SESSION['account_id'] = $account->account_id;
                 header('location:/Farmer/farmer_dashboard');
             } else {
                 header('location:/Login/farmer?error=Incorrect password');
@@ -55,12 +59,17 @@ class Login extends \app\core\Controller
                 $foodbank = new \app\models\gleaner();
                 $foodbank = $foodbank->getByAccount($account->account_id);
                 $_SESSION['foodbank_id'] = $foodbank->foodbank_id;
+                $_SESSION['account_id'] = $account->account_id;
+
                 header('location:/Gleaner/gleaner_feed');
             } else {
                 header('location:/Login/foodbank?error=Incorrect password');
             }
         } else $this->view('Login/foodBankLogin');
     }
-
+    public function logout() {
+        session_destroy();
+        header('location:/');
+    }
     
 }

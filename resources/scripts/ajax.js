@@ -1,9 +1,18 @@
 function register() {
     $registerPage = $("input[name='registerPage']").val()
     switch($registerPage) {
-        case "gleaner" : registerGleaner()
-        case "farmer" : registerFarmer()
-        case "foodbank" : registerFoodbank()
+        case "gleaner" : {
+            registerGleaner()
+            break
+        }
+        case "farmer" : {
+            registerFarmer()
+            break
+        }
+        case "foodbank" : {
+            registerFoodbank()
+            break
+        }
     }
 }
 
@@ -56,8 +65,8 @@ function registerGleaner() {
             "gleaner":gleaner
         },
         success: function(data) {
-            window.location.href="/"
             console.log(data)
+            window.location.href="/"
         },
         error: function() {
             alert("an error occurred")
