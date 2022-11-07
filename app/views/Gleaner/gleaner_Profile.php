@@ -54,6 +54,9 @@
             <div class="d-flex justify-content-center mb-2">
               <button type="button" class="btn btn-primary"><a style="color:white" href="\Gleaner\gleaner_Profile_edit">Edit Profile</a></button>
             </div>
+            <div>
+              <a href="#"></a><div style="cursor: pointer; color:green">Gleaner Rank: #1 </div>
+            </div>
           </div>
         </div>
        
