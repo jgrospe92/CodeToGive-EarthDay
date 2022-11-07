@@ -282,6 +282,11 @@ function finishStep(wizard, state)
     // checks which account is being registered
     var accountName =  document.getElementById("wizard").getAttribute('name');
 
+    switch(accountName){
+        case "gleaner" :
+            registerGleaner();
+    }
+
     console.log(accountName);
     if (wizard.triggerHandler("finishing", [state.currentIndex]))
     {
