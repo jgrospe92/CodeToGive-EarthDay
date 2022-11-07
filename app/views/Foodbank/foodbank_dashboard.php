@@ -112,8 +112,11 @@
                                             </td>
                                             <td>Orange,Apple</td>
                                             <td>
-                                                <div class="d-flex justify-content-center mb-2">
-                                                <button type="button" class="btn btn-primary">Farmer Page</button>
+                                                <div class="d-flex justify-content-center mb-2 " >
+                                                <button type="button" class="btn btn-primary btn-sm" style="width: 6rem;">Farmer Page</button>
+                                                </div>
+                                                 <div class="d-flex justify-content-center mb-2 ">
+                                                <button type="button" class="btn btn-primary btn-sm" style="width: 6rem;">delivery</button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -128,7 +131,10 @@
                                             <td>Potato</td>
                                             <td>
                                                <div class="d-flex justify-content-center mb-2">
-                                                <button type="button" class="btn btn-primary">Farmer Page</button>
+                                                <button type="button" class="btn btn-primary btn-sm" style="width: 6rem;">Farmer Page</button>
+                                                </div>
+                                                 <div class="d-flex justify-content-center mb-2">
+                                                <button type="button" class="btn btn-primary btn-sm" style="width: 6rem;">delivery</button>
                                                 </div>
                                             </td>
                                         </tr>
