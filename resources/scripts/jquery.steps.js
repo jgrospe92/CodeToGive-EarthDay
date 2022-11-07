@@ -278,9 +278,10 @@ function destroy(wizard, options)
 function finishStep(wizard, state)
 {
     var currentStep = wizard.find(".steps li").eq(state.currentIndex);
-
+  
     if (wizard.triggerHandler("finishing", [state.currentIndex]))
     {
+        
         currentStep.addClass("done").removeClass("error");
         wizard.triggerHandler("finished", [state.currentIndex]);
     }
@@ -745,7 +746,11 @@ function paginationClick(wizard, options, state, index)
 {
     var oldIndex = state.currentIndex;
 
-    if (index >= 0 && index < state.stepCount && !(options.forceMoveForward && index < state.currentIndex))
+    var password = document.getElementById("password").value
+    var confirm = document.getElementById("confirm").value
+
+    if (password == confirm && password && confirm) {
+        if (index >= 0 && index < state.stepCount && !(options.forceMoveForward && index < state.currentIndex))
     {
         var anchor = getStepAnchor(wizard, index),
             parent = anchor.parent(),
@@ -754,7 +759,7 @@ function paginationClick(wizard, options, state, index)
         // Enable the step to make the anchor clickable!
         parent._enableAria();
         anchor.click();
-
+        document.getElementById("password_error").style.visibility = "hidden";
         // An error occured
         if (oldIndex === state.currentIndex && isDisabled)
         {
@@ -764,6 +769,12 @@ function paginationClick(wizard, options, state, index)
         }
 
         return true;
+    }
+    }
+    else{
+        setTimeout(function(){
+            document.getElementById("password_error").style.visibility = "visible";
+        },100);
     }
 
     return false;
@@ -1055,7 +1066,7 @@ function renderPagination(wizard, options, state)
     if (options.enablePagination)
     {
         var pagination = "<{0} class=\"actions {1}\"><ul role=\"menu\" aria-label=\"{2}\">{3}</ul></{0}>",
-            buttonTemplate = "<li><a href=\"#{0}\" role=\"menuitem\">{1}</a></li>",
+            buttonTemplate = "<li><a href=\"#{0}\" role=\"menuitem\" onclick=\"{2}\" >{1}</a></li>",
             buttons = "";
 
         if (!options.forceMoveForward)
@@ -1063,7 +1074,7 @@ function renderPagination(wizard, options, state)
             buttons += buttonTemplate.format("previous", options.labels.previous);
         }
 
-        buttons += buttonTemplate.format("next", options.labels.next);
+        buttons += buttonTemplate.format("next", options.labels.next, "");
 
         if (options.enableFinishButton)
         {
@@ -1082,6 +1093,7 @@ function renderPagination(wizard, options, state)
         loadAsyncContent(wizard, options, state);
     }
 }
+
 
 /**
  * Renders a template and replaces all placeholder.
@@ -1358,7 +1370,9 @@ $.fn.steps.destroy = function ()
  **/
 $.fn.steps.finish = function ()
 {
+    console.log("submit");
     finishStep(this, getState(this));
+    
 };
 
 /**
@@ -1905,7 +1919,7 @@ var defaults = $.fn.steps.defaults = {
      * @default function (event, currentIndex, priorIndex) { }
      * @for defaults
      **/
-    onStepChanged: function (event, currentIndex, priorIndex) { },
+    onStepChanged: function (event, currentIndex, priorIndex) {},
 
     /**
      * Fires after cancelation. 
@@ -1936,7 +1950,7 @@ var defaults = $.fn.steps.defaults = {
      * @default function (event, currentIndex) { }
      * @for defaults
      **/
-    onFinished: function (event, currentIndex) { },
+    onFinished: function (event, currentIndex) {  },
 
     /**
      * Fires after async content is loaded. 

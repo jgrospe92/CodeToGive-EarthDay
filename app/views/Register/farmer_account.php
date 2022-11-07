@@ -45,12 +45,17 @@
                             </div>
                             <div class="form-row">
                                 <div class="form-holder">
-                                    <input type="text" name="password" placeholder="Enter Password" class="form-control" required>
+                                    <input id="password" type="text" name="password" placeholder="Enter Password" class="form-control" required>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-holder">
-                                    <input type="text" name="password" placeholder="confirm password" class="form-control" required>
+                                    <input id="confirm" type="text" name="password" placeholder="confirm password" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div id="password_error" style="color:red; visibility: hidden;" role="alert">
+                                    passwords do not match!
                                 </div>
                             </div>
                         </div>
