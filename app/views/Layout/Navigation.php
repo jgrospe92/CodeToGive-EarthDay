@@ -15,7 +15,7 @@
                     <a href="/Main/index">
                         <li>Home</li>
                     </a>
-                    <a href="#event">
+                    <a href="/Main/eventList">
                         <li>Event</li>
                     </a>
                     <a href="#">

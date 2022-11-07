@@ -157,14 +157,7 @@
                                         <li rel="75 km">75 km</li>
                                         <li rel="100 km">100 km</li>
                                     </ul>
-
-
-
-                                    <div class="form-holder">
-                                        <input type="url" name="website" placeholder="Website" class="form-control">
-
-                                    </div>
-
+                                </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="form-holder w-10"><span>Availabilities start:</span>
