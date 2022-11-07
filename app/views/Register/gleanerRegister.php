@@ -42,12 +42,12 @@
                             <div class="form-row">
                                 <div class="form-holder">
 
-                                    <input id="password" type="text" name="password" placeholder="Enter Password" class="form-control" required>
+                                    <input id="password" type="password" name="password" placeholder="Enter Password" class="form-control" required>
 
                                 </div>
                                 <div class="form-holder">
 
-                                    <input id="confirm" type="text" name="password" placeholder="confirm password" class="form-control" required>
+                                    <input id="confirm" type="password" name="password" placeholder="confirm password" class="form-control" required>
                                 </div>
                             </div>
                             <div class="form-row">
