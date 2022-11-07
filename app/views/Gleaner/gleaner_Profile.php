@@ -52,7 +52,7 @@
               class="rounded-circle img-fluid" style="width: 150px;">
             <h5 class="my-3 ">John Smith</h5>
             <div class="d-flex justify-content-center mb-2">
-              <button type="button" class="btn btn-primary">Edit Profile</button>
+              <button type="button" class="btn btn-primary"><a style="color:white" href="\Gleaner\gleaner_Profile_edit">Edit Profile</a></button>
             </div>
           </div>
         </div>
