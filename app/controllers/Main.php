@@ -10,6 +10,15 @@ class Main extends \app\core\Controller {
         $this->view('Main/eventList');
     }
 
+    public function about_us(){
+        $this->view('Main/about');
+    }
+
+    public function contact_us(){
+        $this->view('Main/contact');
+      
+    }
+
     public function gleaner_Profile_edit(){
         $this->view('Gleaner/gleaner_Profile_edit');
     }
