@@ -24,4 +24,11 @@ class farmer extends \app\core\Model
         $STMT->execute(["farmer_id"=>$this->farmer_id]);
         return $STMT->fetchAll();
     }
+    public function getByAccount($id){
+        $SQL = "SELECT * FROM farmer WHERE account_id = :account_id";
+        $STMT = self::$_connection->prepare($SQL);
+        $STMT->execute(["account_id"=>$id]);
+        $STMT->setFetchMode(\PDO::FETCH_CLASS,'\app\models\farmer');
+        return $STMT->fetch();
+    }
 }

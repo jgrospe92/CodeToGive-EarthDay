@@ -27,7 +27,7 @@
                 <div class="row justify-content-center">
                     <div class="col-md-5">
                         <div class="card">
-                            <h2 class="card-title text-center">Login as Farmer</a></h2>
+                            <h2 class="card-title text-center">Login as Foodbank</a></h2>
 
                             <div class="navbar">
                                 <a href="\Login\gleaner">Gleaner</a>
@@ -36,19 +36,19 @@
                             </div>
 
                             <hr >
-                                <div class="card-body py-md-4">
-                                    <form _lpchecked="1" action='' method='post'>
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" id="email" placeholder="Email">
-                                        </div>                            
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" id="password" placeholder="Password">
-                                        </div>
-                                        <div class="d-flex flex-row align-items-center justify-content-between">
-                                            <a href="\Register\farmer_account">Register</a>
-                                            <button class="btn btn-primary">Login</button>
-                                        </div>
-                                    </form>
+                            <div class="card-body py-md-4">
+                                <form _lpchecked="1" action='' method='post'>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="email" name="email_input" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" id="password" name="password_input" placeholder="Password">
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center justify-content-between">
+                                        <a href="\Register\foodbank">Register</a>
+                                        <button name="login" type="submit" class="btn btn-primary">Login</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
