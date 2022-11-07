@@ -37,11 +37,18 @@ class Main extends \app\core\Controller {
     public function foodBank_Profile(){
         $this->view('FoodBank/foodBank_Profile');
     }
-    public function farmerLogin(){ 
-        $this->view('Login/farmerLogin');
-    }
     public function foodBankLogin(){ 
         $this->view('Login/foodBankLogin');
+    }
+    public function foodbank_dashboard(){ 
+        $this->view('FoodBank/foodBank_dashBoard');
+    }
+    public function delivery(){ 
+        $this->view('FoodBank/delivery');
+    }
+
+    public function farmerLogin(){ 
+        $this->view('Login/farmerLogin');
     }
     public function gleanerLogin(){ 
         $this->view('Login/gleanerLogin');

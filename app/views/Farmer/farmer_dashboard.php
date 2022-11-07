@@ -47,7 +47,7 @@
                             <img id="g-profile-img" class="img-fuid mb-3" width="80" height="80" alt="avatar" src="https://profiles.stanford.edu/proxy/api/cap/profiles/65672/resources/profilephoto/350x350.1509500008416.jpg">
                         </div>
                         <div class="mt-1 d-flex justify-content-center">
-                            <button class="btn btn-primary btn-sm mt-3">Profile Page</button>
+                            <button class="btn btn-primary btn-sm mt-3"><a style="color:black" href="\Farmer\farmer_Profile">Profile Page</a></button>
                         </div>
                         <div class="detail clearfix">
                             <ul class="list-group list-group-flush">
