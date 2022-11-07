@@ -114,12 +114,12 @@
                 <p class="mb-4"><span class="text-primary font-italic me-1">Your Groups</span>
                 </p>
                <div class="mb-3" >
-                <p class="mb-1" style="font-size: .77rem; display:inline-block;">Web Design</p>
+                <p class="mb-1" style="font-size: .77rem; display:inline-block;">Group 1</p>
                
                  <button type="button" class="btn btn-primary ml-4">leave the group</button>
                 </div> 
                   <div class="mb-3" >
-                <p class="mb-1" style="font-size: .77rem; display:inline-block;">Web Design</p>
+                <p class="mb-1" style="font-size: .77rem; display:inline-block;">Group 2</p>
                
                  <button type="button" class="btn btn-primary ml-4">leave the group</button>
                 </div> 
@@ -133,24 +133,21 @@
                 <p class="mb-4"><span class="text-primary font-italic me-1">Your Events</span>
                 </p>
                <div class="mb-3" >
-                <p class="mb-1" style="font-size: .77rem; display:inline-block;">Web Design</p>
+                <p class="mb-1" style="font-size: .77rem; display:inline-block;">Event 1</p>
                
                  <button type="button" class="btn btn-primary ml-4">cancel event</button>
                 </div> 
                 <div class="mb-3" >
-                <p class="mb-1" style="font-size: .77rem; display:inline-block;">Web Design</p>
+                <p class="mb-1" style="font-size: .77rem; display:inline-block;">Event 2</p>
                
                  <button type="button" class="btn btn-primary ml-4">cancel event</button>
                 </div> 
-
                <div class="mb-3" >
-                <p class="mb-1" style="font-size: .77rem; display:inline-block;">Web Design</p>
-            
+                <p class="mb-1" style="font-size: .77rem; display:inline-block;">Event 3</p>
                  <button type="button" class="btn btn-primary ml-4">cancel event</button>
                </div> 
-
                 <div class="mb-3" >
-                <p class="mb-1" style="font-size: .77rem; display:inline-block;">Web Design</p>
+                <p class="mb-1" style="font-size: .77rem; display:inline-block;">Event 4</p>
             
                  <button type="button" class="btn btn-primary ml-4">cancel event</button>
                </div> 

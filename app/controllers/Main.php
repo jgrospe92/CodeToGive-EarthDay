@@ -1,6 +1,8 @@
 <?php
 namespace app\controllers;
 
+use PDO;
+
 class Main extends \app\core\Controller {
     public function index() {
         $this->view('Main/index');
@@ -20,6 +22,11 @@ class Main extends \app\core\Controller {
     }
 
     // saq's test functions to load pages
+    public function schedDeliever(){
+        $this->view('Delivery/scheduleDelivery');
+    }
+
+
     public function gleaner_Profile_edit(){
         $this->view('Gleaner/gleaner_Profile_edit');
     }

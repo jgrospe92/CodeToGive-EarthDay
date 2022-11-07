@@ -11,4 +11,11 @@ class Farmer extends \app\core\Controller {
         $this->view('Farmer/farmer_profile');
     }
 
+    public function create_event(){
+        $this->view('Events/createEvents');
+    }
+
+    public function edit_event(){
+        $this->view('Events/editEvents');
+    }
 }

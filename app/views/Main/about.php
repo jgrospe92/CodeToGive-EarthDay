@@ -42,17 +42,20 @@
         <div class="row featurette">
             <div class="col-md-7">
                 <h2 class="featurette-heading fw-normal lh-1">
-                    LAUNCH OF THE PROGRAM TOMORROW’S FOREST
-                    <span class="text-muted">GREEN INFRASTRUCTURE</span>
+                    What is Uglean?
+                    <span class="text-muted">Non Profit Organization</span>
                 </h2>
                 <p class="lead">
-                    With a grant from the Government of Quebec, Earth Day Canada will be implementing several
-                    pilot projects on agricultural corridors to document the climate benefits of developments
-                    and practices in agricultural settings 🌾 Click to learn more!
+                    Earth Day Canada is looking to create a web-based platform to simplify the management of *gleaning events.
+                    *Gleaning is about harvesting and sharing the surplus of the fields that would have been left behind and lost - during the high season.
+                    Earth Day is committed to reduce waste of all kinds - that is detrimental to environment and human beings. It’s a great opportunity to
+                    transform what would have been a waste into much-needed food for people in need!
+                    The web-based platform should offer a simple way to search gleaning activities for volunteers, a simple registration process for
+                    producers who want to participate - as well as a portal for the benefiting organizations🌾 Click to learn more!
                 </p>
             </div>
             <div class="col-md-5">
-                <img class="bd-placeholder-img featurette-image  mx-auto" src="/resources/images/art1.jpeg" height="400" width="500" style="border-radius: 10px;box-shadow:inset 30px;">
+                <img class="bd-placeholder-img featurette-image  mx-auto" src="/resources/images/uglean.png" height="400" width="500" style="border-radius: 10px;box-shadow:inset 30px;">
                 <title>Green</title>
                 <rect width="100%" height="100%" fill="#eee" />
                 </img>

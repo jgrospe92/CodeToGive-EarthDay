@@ -1,4 +1,38 @@
-<?php $this->view('Layout/Header'); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <?php
+    $this->view('Layout/Head');
+    ?>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/"/>
+    <link rel="stylesheet" href="/resources/styles/carousel.css">
+    <link rel="stylesheet" href="/resources/styles/bootstrap.min.css">
+    <title>U Glean</title>
+</head>
+<style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .text-color h1, .text-color p{
+            color: white;
+      }
+
+      .checked {
+        color:orange
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
 <body>
     <?php $this->view('Layout/Navigation'); ?>
 
@@ -100,8 +134,9 @@
           
           <div class="col-md-6">
             <div class="card mb-4 mb-md-0">
+            <button type="button" class="btn btn-primary mb-2">Save Changes</button>
             <button type="button" class="btn btn-primary"><a style="color:white" href="\Famer\farmer_Profile">Cancel</a></button>
-              <button type="button" class="btn btn-primary">Save Changes</button>
+             
               
               </div>
               
