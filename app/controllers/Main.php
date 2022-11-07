@@ -35,4 +35,7 @@ class Main extends \app\core\Controller {
     public function gleanerLogin(){ 
         $this->view('Login/gleanerLogin');
     }
+    public function createGroups(){
+        $this->view('Groups/createGroup');
+    }
 }
