@@ -11,4 +11,8 @@ class Foodbank extends \app\core\Controller {
         $this->view('Foodbank/delivery');
     }
 
+    public function foodBank_Profile(){
+        $this->view('Foodbank/foodBank_Profile');
+    }
+
 }

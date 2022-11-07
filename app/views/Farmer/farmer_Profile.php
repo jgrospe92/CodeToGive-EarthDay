@@ -59,6 +59,9 @@
             <div class="d-flex justify-content-center mb-2">
               <button type="button" class="btn btn-primary"><a style="color:white" href="\Famer\farmer_Profile_edit">Edit Profile</a></button>
             </div>
+            <div class="d-flex justify-content-center mb-2">
+              <button type="button" class="btn btn-primary"><a style="color:white" href="\Farmer\farmer_dashboard">Dashboard</a></button>
+            </div>
           </div>
         </div>
         

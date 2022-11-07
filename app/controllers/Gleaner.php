@@ -34,4 +34,8 @@ class Gleaner extends \app\core\Controller {
     public function editGroup(){
         $this->view('Groups/editGroup');
     }
+
+    public function gleaner_leaderboard(){
+        $this->view('Gleaner/gleaner_leaderboard');
+    }
 }

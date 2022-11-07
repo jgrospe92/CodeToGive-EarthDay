@@ -157,9 +157,9 @@
                             <input type="text" class="form-control" id="availabilities" placeholder="Availabilities">
                         </div>
                         <div class="d-flex flex-row align-items-center justify-content-between">
-                            <button type= "submit" value="Cancel" class="btn btn-primary">Cancel</button>
+                            <button type= "submit" value="Cancel" class="btn btn-primary"><a style="color:white" href="\Gleaner\gleaner_feed">Cancel</a> </button>
                             <!-- <a href="\app\views\Login\gleaner_feed.php">Cancel</a> -->
-                            <button type= "submit" value="Submit" class="btn btn-primary">Update gleaning group</button>
+                            <button type= "submit" value="Submit" class="btn btn-primary"><a style="color:white" href="\Gleaner\gleaner_feed">Update gleaning group</a></button>
                         </div>
                     </form>
                   </div>

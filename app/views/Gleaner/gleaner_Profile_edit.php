@@ -125,7 +125,7 @@
             </div>
             <div class="col-md-6">
               <div class="card mb-1 mb-md-0">
-                <button type="button" class="btn btn-primary mb-2">Save Changes</button>
+                <button type="button" class="btn btn-primary mb-2"><a style="color:white" href="\Gleaner\gleaner_Profile">Update</a></button>
                 <button type="button" class="btn btn-primary"><a style="color:white" href="\Gleaner\gleaner_Profile">Cancel</a></button>
               </div>
             </div>

@@ -44,7 +44,7 @@
                             <img id="g-profile-img" class="img-fuid mb-3" width="80" height="80" alt="avatar" src="/resources/images/food-bank-logo.png">
                         </div>
                         <div class="mt-1 d-flex justify-content-center">
-                            <button class="btn btn-primary btn-sm mt-3"><a style="color:white" href="/Profile/foodbank_profile">Profile Page</a></button>
+                            <button class="btn btn-primary btn-sm mt-3"><a style="color:white" href="/FoodBank/foodBank_profile">Profile Page</a></button>
                         </div>
                         <div class="detail clearfix">
                             <ul class="list-group list-group-flush">

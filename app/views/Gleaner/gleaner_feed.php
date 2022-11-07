@@ -104,7 +104,7 @@
                                             </td>
                                             <td>22 October 2022</td>
                                             <td>
-                                                <a href=""><span class="g-action bi bi-pencil-fill"> </span></a>
+                                                <a href="\Groups\editGroup"><span class="g-action bi bi-pencil-fill"> </span></a>
                                                 <a href=""><span class="g-action fa fa-eye"></span></a>
                                                 <a href=""><span class="g-action fa fa-trash"></span></a>
                                             </td>
@@ -119,7 +119,7 @@
                                             </td>
                                             <td>10 November 2022</td>
                                             <td>
-                                                <a href=""><span class="g-action bi bi-pencil-fill"> </span></a>
+                                                <a href="\Groups\editGroup"><span class="g-action bi bi-pencil-fill"> </span></a>
                                                 <a href=""><span class="g-action fa fa-eye"></span></a>
                                                 <a href=""><span class="g-action fa fa-trash"></span></a>
                                             </td>
@@ -158,7 +158,7 @@
                                         <img id='need_img' src='/resources/images/card_4.png'>
                                         Need: $e->urgency</div>";
                                 echo "<button class='mk_group' id='mk_group'>
-                                        Make group
+                                        <a style='color:white' href='\Groups\createGroup'>Make group</a>
                                         <img id='mk_group_img' src='/resources/images/card_6.png'>
                                     </button>";
                                 echo "<button id='jn_group' class='j_group'>

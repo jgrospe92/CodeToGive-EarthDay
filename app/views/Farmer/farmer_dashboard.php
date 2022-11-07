@@ -106,12 +106,11 @@
                     <div class="dashborad-box">
                         <h4 class="title">Your Events</h4>
                         <div class="section-body">
-                            <div class="dropdown mr-1">
-                                <button type="button" class="btn btn-sm btn-primary " id="dropdownMenuOffset" data-toggle="dropdown" data-offset="10,20">
-                                <a style="color:white" href="\Events\createEvent">Create New Event</a>
+                    
+                                <button type="button"  class="btn btn-sm btn-primary ">
+                               <a style="color:white" href="\Events\createEvents">Create New Event</a>
                                 </button>
-                          
-                            </div>
+                      
                             <div class="table-responsive">
                                 <table class="table table-striped">
                                     <thead>
