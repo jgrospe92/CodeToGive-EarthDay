@@ -11,7 +11,7 @@ class Register extends \app\core\Controller {
         $this->view('Register/gleanerRegister');
     }
     public function foodbank(){
-        $this->view('Register/foodBankLogin');
+        $this->view('Register/foodbankRegister');
     }
 
     
