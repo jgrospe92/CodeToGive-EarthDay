@@ -55,7 +55,7 @@
                                     <input id="confirm" type="text" name="password" placeholder="confirm password" class="form-control" required>
                                 </div>
                             </div>
-                              <div class="form-row">
+                            <div class="form-row">
                                 <div id="password_error" style="color:red; visibility: hidden;" role="alert">
                                     passwords do not match!
                                 </div>
@@ -159,32 +159,30 @@
                                     </ul>
 
 
-                             //   <div div class="form-holder w-10">
-                              //  <input type="text" placeholder="Max distance(km)" name="distance" class="form-control">
-                              //  </div>
-                               // <div class="form-holder">
-                                //    <input type="url" name="website" placeholder="Website" class="form-control">
+
+                                    <div class="form-holder">
+                                        <input type="url" name="website" placeholder="Website" class="form-control">
+
+                                    </div>
 
                                 </div>
-                               
-                            </div>
-                            <div class="form-row">
-                                <div class="form-holder w-10"><span>Availabilities start:</span>
-                                    <input type="date" id="availabilities" data-toggle="tooltip" title="Available from" placeholder="start date" name="start_date" class="form-control">
+                                <div class="form-row">
+                                    <div class="form-holder w-10"><span>Availabilities start:</span>
+                                        <input type="date" id="availabilities" data-toggle="tooltip" title="Available from" placeholder="start date" name="start_date" class="form-control">
+                                    </div>
+                                    <div class="form-holder w-10"><span>Availabilities end:</span>
+                                        <input type="date" placeholder="end date" name="end_date" class="form-control">
+                                    </div>
                                 </div>
-                                <div class="form-holder w-10"><span>Availabilities end:</span>
-                                    <input type="date" placeholder="end date" name="end_date" class="form-control">
-                                </div>
-                            </div>
 
-                            <div class="checkbox-circle mt-24">
-                                <label>
-                                    <input type="checkbox">Do you accept the <label for="modal-1" style="color:black">terms and conditions?</label>
-                                    <span class="checkmark"></span>
-                                </label>
+                                <div class="checkbox-circle mt-24">
+                                    <label>
+                                        <input type="checkbox">Do you accept the <label for="modal-1" style="color:black">terms and conditions?</label>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
                             </div>
                         </div>
-                    </div>
                 </section>
             </form>
         </div>
