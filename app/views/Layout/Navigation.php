@@ -18,10 +18,10 @@
                     <a href="/Main/eventList">
                         <li>Event</li>
                     </a>
-                    <a href="#">
+                    <a href="/Main/about_us">
                         <li>About</li>
                     </a>
-                    <a href="#">
+                    <a href="/Main/contact_us">
                         <li>Contact</li>
                     </a>
                     <a href="\Login\gleaner">

@@ -11,9 +11,10 @@ class Register extends \app\core\Controller {
         $this->view('Register/gleanerRegister');
     }
     public function foodbank(){
-        $this->view('Register/foodbankRegister');
+        $this->view('Register/foodBankLogin');
     }
 
+    
     public function register_farmer() {
         $_account = $_POST["account"];
         $_farmer = $_POST["farmer"];
