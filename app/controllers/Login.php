@@ -67,9 +67,11 @@ class Login extends \app\core\Controller
             }
         } else $this->view('Login/foodBankLogin');
     }
+
+    
     public function logout() {
         session_destroy();
-        header('location:/');
+        header('location:/Main/index');
     }
     
 }
