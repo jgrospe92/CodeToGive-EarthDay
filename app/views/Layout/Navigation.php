@@ -36,7 +36,6 @@
                             echo"famer";
                             $linkprofile = "<a href='/Profile/foodbank_profile/'> <li>Profile</> ";
                         }
-                        
                     ?>
                     <?= $linkprofile ?>
 

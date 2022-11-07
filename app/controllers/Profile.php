@@ -14,6 +14,4 @@ class Profile extends \app\core\Controller {
     public function foodbank_profile(){
         $this->view('FoodBank/foodBank_Profile');
     }
-
-
 }
