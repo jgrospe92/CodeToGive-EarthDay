@@ -47,11 +47,12 @@ class Main extends \app\core\Controller {
     public function gleanerLogin(){ 
         $this->view('Login/gleanerLogin');
     }
-
     public function createEvents(){ 
         $this->view('Events/createEvents');
     }
-
+    public function editEvents(){ 
+        $this->view('Events/editEvents');
+    }
     public function gleanerRegister(){ 
         $this->view('Register/gleanerRegister');
     }
