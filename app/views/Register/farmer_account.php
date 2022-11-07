@@ -102,7 +102,7 @@
                                         <div class="select-control">Province</div>
                                         <i class="zmdi zmdi-caret-down"></i>
                                     </div>
-                                    <ul class="dropdown">
+                                    <ul class="dropdown" style="height: 100px; overflow: auto;">
                                         <li rel="AB">Alberta</li>
                                         <li rel="BC">British Columbia</li>
                                         <li rel="MB">Manitoba</li>

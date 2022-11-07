@@ -1,13 +1,40 @@
 
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <?php
+    $this->view('Layout/Head');
+    ?>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/"/>
+    <link rel="stylesheet" href="/resources/styles/carousel.css">
+    <link rel="stylesheet" href="/resources/styles/bootstrap.min.css">
     <link rel="stylesheet" href="/resources/styles/foodbank_dashboard.css">
+    <title>U Glean</title>
+</head>
+<style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .text-color h1, .text-color p{
+            color: white;
+      }
 
-<?php $this->view('Layout/Header'); ?>
- <?php $this->view('Layout/Navigation'); ?>
- <br>
- <br>
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
 <body class=" m-t-3">
-    <section class="user-page section-padding ">
+    <?php $this->view('Layout/Navigation'); ?>
+    <section class="user-page p-5 section-padding ">
         <div class="container m-t-3">
             <div class="row align-items-stretch">
                 <div class="col-lg-4 col-md-5 col-xs-12">
