@@ -5,7 +5,7 @@
    top: 20px;
    left: 50px;
    
-   z-index: 1;
+   z-index: 99;
    
    -webkit-user-select: none;
    user-select: none;
@@ -118,6 +118,7 @@
     background: #ededed;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
+    
     /* to stop flickering of text in safari */
 
     transform-origin: 0 0;

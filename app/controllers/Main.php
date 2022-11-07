@@ -7,7 +7,7 @@ class Main extends \app\core\Controller {
     }
 
     public function eventList(){
-        $this->view('EventList/index');
+        $this->view('Main/eventList');
     }
 
     public function gleaner_Profile_edit(){
