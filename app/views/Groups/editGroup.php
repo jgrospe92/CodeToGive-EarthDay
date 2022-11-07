@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <?php $this->view('Layout/Header'); ?> 
+<?php $this->view('Layout/Header'); ?> 
     <head>
         <link
             rel="canonical"
@@ -76,18 +76,18 @@
         </style>
     </head>
     <body>
-    <?php $this->view('Layout/Navigation'); ?> 
+    <?php $this->view('Layout/Navigation'); ?>
         <main>
             <div class="container">
                 <div style="text-align:center">
                 <br>
-                    <h2 class="card-title text-center">Creating your group</a></h2>
+                    <h2 class="card-title text-center">Editing your group</a></h2>
                   <p>Team work makes the dream work</p>
                   <hr>
                 </div>
                 <div class="row">
                   <div class="column">
-                    <img src="https://media.istockphoto.com/id/1145216640/photo/earth-day-planting-the-trees.jpg?s=612x612&w=0&k=20&c=6T11nedypMCSdf6Z-wFp1jbwb4cVvK123aDjl1qTxBE=" style="width:100%">
+                    <img src="https://img.freepik.com/premium-photo/working-together-helps-us-all-grow-shot-group-unrecognizable-people-holding-plants-growing-out-soil_590464-47748.jpg?w=2000" style="width:100%">
                   </div>
                   <div class="column">
                     <form _lpchecked="1" action='' method='post'>
@@ -153,7 +153,7 @@
                         <div class="d-flex flex-row align-items-center justify-content-between">
                             <button type= "submit" value="Cancel" class="btn btn-primary">Cancel</button>
                             <!-- <a href="\app\views\Login\gleaner_feed.php">Cancel</a> -->
-                            <button type= "submit" value="Submit" class="btn btn-primary">Create gleaning group</button>
+                            <button type= "submit" value="Submit" class="btn btn-primary">Update gleaning group</button>
                         </div>
                     </form>
                   </div>
@@ -161,6 +161,6 @@
               </div>
         </main>
         <?php $this->view('Layout/Footer'); ?>
-        <?php $this->view('Layout/Scripts'); ?> 
+        <?php $this->view('Layout/Scripts'); ?>
     </body>
 </html>
