@@ -39,7 +39,6 @@
         <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
         <h3 class="p-3 text-primary font-italic text-center ">
          Gleaner Profile
-        <h3> 
         </nav>
       </div>
     </div>
@@ -135,24 +134,24 @@
                <div class="mb-3" >
                 <p class="mb-1" style="font-size: .77rem; display:inline-block;">Web Design</p>
                
-                 <button type="button" class="btn btn-primary ml-4">cancel event</button>
+                 <button type="button" class="btn btn-primary ml-4">cancle event</button>
                 </div> 
                 <div class="mb-3" >
                 <p class="mb-1" style="font-size: .77rem; display:inline-block;">Web Design</p>
                
-                 <button type="button" class="btn btn-primary ml-4">cancel event</button>
+                 <button type="button" class="btn btn-primary ml-4">cancle event</button>
                 </div> 
 
                <div class="mb-3" >
                 <p class="mb-1" style="font-size: .77rem; display:inline-block;">Web Design</p>
             
-                 <button type="button" class="btn btn-primary ml-4">cancel event</button>
+                 <button type="button" class="btn btn-primary ml-4">cancle event</button>
                </div> 
 
                 <div class="mb-3" >
                 <p class="mb-1" style="font-size: .77rem; display:inline-block;">Web Design</p>
             
-                 <button type="button" class="btn btn-primary ml-4">cancel event</button>
+                 <button type="button" class="btn btn-primary ml-4">cancle event</button>
                </div> 
               </div>
             </div>

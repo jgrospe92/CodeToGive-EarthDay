@@ -24,6 +24,22 @@
                     <a href="/Main/contact_us">
                         <li>Contact</li>
                     </a>
+                    <?php
+                        $linkprofile = "";
+
+                        if (isset($_SESSION['gleaner_id'])){
+                           $linkprofile = "<a href='/Profile/gleaner_profile/'> <li>Profile</> ";
+                        } else if (isset($_SESSION['farmer_id'])){
+                            echo"famer";
+                            $linkprofile = "<a href='/Profile/farmer_profile/'> <li>Profile</> ";
+                        } else if (isset($_SESSION['foodbank_id'])){
+                            echo"famer";
+                            $linkprofile = "<a href='/Profile/foodbank_profile/'> <li>Profile</> ";
+                        }
+                        
+                    ?>
+                    <?= $linkprofile ?>
+
                     <?php 
                         if (isset($_SESSION['account_id'])){
                             $link = "href='/Login/logout'";  

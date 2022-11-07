@@ -61,7 +61,7 @@ class Login extends \app\core\Controller
                 $_SESSION['foodbank_id'] = $foodbank->foodbank_id;
                 $_SESSION['account_id'] = $account->account_id;
 
-                header('location:/Gleaner/gleaner_feed');
+                header('location:/FoodBank/foodbank_dashboard');
             } else {
                 header('location:/Login/foodbank?error=Incorrect password');
             }
