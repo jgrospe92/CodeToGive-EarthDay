@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php $this->view('Layout/Header'); ?> 
-    <head>
-        <link
-            rel="canonical"
-            href="https://getbootstrap.com/docs/5.2/examples/carousel/"
-            />
-            <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-            crossorigin="anonymous"
-            /> 
-        <link href="../styles/bootstrap.min.css" rel="stylesheet" />
-        <style>
-            body {
-            font-family: Arial, Helvetica, sans-serif;
-            }
-    
-            * {
-            box-sizing: border-box;
-            }
-    
-            /* Style inputs  */
-            input[type=text], select, textarea {
+<head>
+    <?php
+    $this->view('Layout/Head');
+    ?>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/"/>
+    <link rel="stylesheet" href="/resources/styles/carousel.css">
+    <link rel="stylesheet" href="/resources/styles/bootstrap.min.css">
+    <title>U Glean</title>
+</head>
+<style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .text-color h1, .text-color p{
+            color: white;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      /* Style inputs  */
+      input[type=text], select, textarea {
             width: 100%;
             padding: 12px;
             border: 1px solid #ccc;
@@ -73,9 +79,9 @@
                 margin-top: 0;
             }
             }
-        </style>
-    </head>
-    <body>
+    </style>
+
+<body>
     <?php $this->view('Layout/Navigation'); ?>
         <main>
             <div class="container">
@@ -160,7 +166,6 @@
                 </div>
               </div>
         </main>
-        <?php $this->view('Layout/Footer'); ?>
         <?php $this->view('Layout/Scripts'); ?>
     </body>
 </html>
