@@ -38,14 +38,14 @@
                                 <div class="card-body py-md-4">
                                     <form _lpchecked="1" action='' method='post'>
                                         <div class="form-group">
-                                            <input type="email" class="form-control" id="email" placeholder="Email">
-                                        </div>                            
+                                            <input type="email" class="form-control" id="email" name="email_input" placeholder="Email">
+                                        </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control" id="password" placeholder="Password">
+                                            <input type="password" class="form-control" id="password" name="password_input" placeholder="Password">
                                         </div>
                                         <div class="d-flex flex-row align-items-center justify-content-between">
                                             <a href="\Register\gleaner">Register</a>
-                                            <button class="btn btn-primary">Login</button>
+                                            <button name="login" type="submit" class="btn btn-primary">Login</button>
                                         </div>
                                     </form>
                             </div>

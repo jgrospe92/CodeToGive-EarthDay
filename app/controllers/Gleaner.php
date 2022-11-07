@@ -15,4 +15,12 @@ class Gleaner extends \app\core\Controller {
      public function gleaner_profile_edit(){
         $this->view('Gleaner/gleaner_profile_edit');
     }
+
+    public function createGroup(){
+        $this->view('Groups/createGroup');
+    }
+
+    public function editGroup(){
+        $this->view('Groups/editGroup');
+    }
 }

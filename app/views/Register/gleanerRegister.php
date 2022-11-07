@@ -99,7 +99,7 @@
                             <p>Additional details</p>
                             <div class="form-row">
 								<div class="form-holder w-100">
-									<textarea name="bio" id="" placeholder="Bio" class="form-control" style="height: 99px;"></textarea>
+									<textarea name="bio" id="bioInput" placeholder="Bio" class="form-control" style="height: 99px;"></textarea>
 								</div>
 							</div>
                             <div class="checkbox-circle mt-24">

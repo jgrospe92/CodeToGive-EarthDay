@@ -31,7 +31,7 @@ function registerFarmer() {
             "farmer":farmer
         },
         success: function() {
-            alert("success")
+            window.location.href="/"
         },
         error: function() {
             alert("an error occurred")
@@ -45,7 +45,7 @@ function registerGleaner() {
     gleaner = {
         name:$("input[name='first_name']").val()+" "+$("input[name='last_name']").val(),
         username:$("input[name='username']").val(),
-        bio: $("input[name='bio']").val()
+        bio: $("#bioInput").val()
     }
 
     $.ajax({
@@ -55,8 +55,9 @@ function registerGleaner() {
             "account":account,
             "gleaner":gleaner
         },
-        success: function() {
-            alert("success")
+        success: function(data) {
+            window.location.href="/"
+            console.log(data)
         },
         error: function() {
             alert("an error occurred")
@@ -90,7 +91,7 @@ function registerFoodbank() {
             "foodbank":foodbank
         },
         success: function() {
-            alert("success")
+            window.location.href="/"
         },
         error: function() {
             alert("an error occurred")
