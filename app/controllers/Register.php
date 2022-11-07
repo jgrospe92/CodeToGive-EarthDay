@@ -59,6 +59,8 @@ class Register extends \app\core\Controller {
         $gleaner->username = $_gleaner["username"];
         $gleaner->bio = $_gleaner["bio"];
         $gleaner->insert();
+        echo $account->password_hash;
+
     }
     public function register_foodbank() {
         $_account = $_POST["account"];

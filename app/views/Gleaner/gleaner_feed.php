@@ -57,7 +57,7 @@
             <div class="col-md-3">
                 <div class="user-profile-box">
                     <div class="header clearfix d-flex flex-column align-items-center">
-                        <h2>My Name</h2>
+                        <h2><?=$data['gleaner']->name?></h2>
                         <img id="g-profile-img" class="img-fuid mb-3" width="80" height="80" alt="avatar" src="https://profiles.stanford.edu/proxy/api/cap/profiles/65672/resources/profilephoto/350x350.1509500008416.jpg">
                     </div>
                     <div class="mt-1 d-flex justify-content-center">
@@ -135,122 +135,38 @@
 
                 <div class="row">
                     <div class="feed">
-                        <div class="event_card">
-                            <div id="farmName">Farm Name</div>
-                            <div id="location">Location: Outremont</div>
-
-                            <div id="spots">
-                                <img id="spots_img" src="/resources/images/card_1.png" />
-                                Spots Available: 20/40
-                            </div>
-                            <div id="harvested">
-                                <img id="harvested_img" src="/resources/images/card_2.png" />
-                                Harvested:30/50
-                            </div>
-                            <div id="days">
-                                <img id="days_img" src="/resources/images/card_3.png" />
-                                Days:MWF
-                            </div>
-                            <div id="need">
-                                <img id="need_img" src="/resources/images/card_4.png" />
-                                Need: Urgent
-                            </div>
-                            <button class="mk_group" id="mk_group">
-                                Make Group
-                                <img id="mk_group_img" src="/resources/images/card_6.png" />
-                            </button>
-                            <button class="j_group" id="jn_group">
-                                Join Group
-                                <img id="jn_group_img" src="/resources/images/card_5.png" />
-                            </button>
-                        </div>
-                        <div class="event_card">
-                            <div id="farmName">Farm Name</div>
-                            <div id="location">Location: Outremont</div>
-
-                            <div id="spots">
-                                <img id="spots_img" src="/resources/images/card_1.png" />
-                                Spots Available: 20/40
-                            </div>
-                            <div id="harvested">
-                                <img id="harvested_img" src="/resources/images/card_2.png" />
-                                Harvested:30/50
-                            </div>
-                            <div id="days">
-                                <img id="days_img" src="/resources/images/card_3.png" />
-                                Days:MWF
-                            </div>
-                            <div id="need">
-                                <img id="need_img" src="/resources/images/card_4.png" />
-                                Need: Urgent
-                            </div>
-                            <button class="mk_group" id="mk_group">
-                                Make Group
-                                <img id="mk_group_img" src="/resources/images/card_6.png" />
-                            </button>
-                            <button class="j_group" id="jn_group">
-                                Join Group
-                                <img id="jn_group_img" src="/resources/images/card_5.png" />
-                            </button>
-                        </div>
-                        <div class="event_card">
-                            <div id="farmName">Farm Name</div>
-                            <div id="location">Location: Outremont</div>
-
-                            <div id="spots">
-                                <img id="spots_img" src="/resources/images/card_1.png" />
-                                Spots Available: 20/40
-                            </div>
-                            <div id="harvested">
-                                <img id="harvested_img" src="/resources/images/card_2.png" />
-                                Harvested:30/50
-                            </div>
-                            <div id="days">
-                                <img id="days_img" src="/resources/images/card_3.png" />
-                                Days:MWF
-                            </div>
-                            <div id="need">
-                                <img id="need_img" src="/resources/images/card_4.png" />
-                                Need: Urgent
-                            </div>
-                            <button class="mk_group" id="mk_group">
-                                Make Group
-                                <img id="mk_group_img" src="/resources/images/card_6.png" />
-                            </button>
-                            <button class="j_group" id="jn_group">
-                                Join Group
-                                <img id="jn_group_img" src="/resources/images/card_5.png" />
-                            </button>
-                        </div>
-                        <div class="event_card">
-                            <div id="farmName">Farm Name</div>
-                            <div id="location">Location: Outremont</div>
-
-                            <div id="spots">
-                                <img id="spots_img" src="/resources/images/card_1.png" />
-                                Spots Available: 20/40
-                            </div>
-                            <div id="harvested">
-                                <img id="harvested_img" src="/resources/images/card_2.png" />
-                                Harvested:30/50
-                            </div>
-                            <div id="days">
-                                <img id="days_img" src="/resources/images/card_3.png" />
-                                Days:MWF
-                            </div>
-                            <div id="need">
-                                <img id="need_img" src="/resources/images/card_4.png" />
-                                Need: Urgent
-                            </div>
-                            <button class="mk_group" id="mk_group">
-                                Make Group
-                                <img id="mk_group_img" src="/resources/images/card_6.png" />
-                            </button>
-                            <button class="j_group" id="jn_group">
-                                Join Group
-                                <img id="jn_group_img" src="/resources/images/card_5.png" />
-                            </button>
-                        </div>
+                        <?php
+                        foreach($data['events'] as $event)
+                            $e = $event["event"];
+                            $f = $event["farm"];
+                            echo "<div class='event_card'>";
+                                echo "<div id='farmName'>$f->name</div>";
+                                echo "<div id='location'>Location: $f->city</div>";
+                                echo "<div id='spots'>
+                                        <img id='spots_img' src='/resources/images/card_1.png'>
+                                        Spots Available: 20/40
+                                      </div>";
+                                echo "<div id='harvested'>
+                                        <img id='harvested_img' src='/resources/images/card_2.png'>
+                                        Name: $e->name
+                                      </div>";
+                                echo "<div id='days'>
+                                        <img id='days_img' src='/resources/images/card_3.png'>
+                                        $e->availabilities_start - $e->availabilities_end
+                                    </div>";
+                                echo "<div id='need'>
+                                        <img id='need_img' src='/resources/images/card_4.png'>
+                                        Need: $e->urgency</div>";
+                                echo "<button class='mk_group' id='mk_group'>
+                                        Make group
+                                        <img id='mk_group_img' src='/resources/images/card_6.png'>
+                                    </button>";
+                                echo "<button id='jn_group' class='j_group'>
+                                        Join group
+                                        <img id='jn_group_img' src='/resources/images/card_5.png'>
+                                    </button>";
+                            echo "</div>";
+                        ?>
                     </div>
                 </div>
             </div>
