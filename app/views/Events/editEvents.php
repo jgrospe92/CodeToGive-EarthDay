@@ -16,7 +16,6 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
     crossorigin="anonymous"
     /> 
-    <link href="../styles/bootstrap.min.css" rel="stylesheet" />
     <!-- <link href="../styles/bootstrap.min.css" rel="stylesheet" /> -->
     <style>
         body {
@@ -86,7 +85,7 @@
     <main>
         <div class="container">
         <div style="text-align:center">
-            <h2>Create an Event</h2>
+            <h2>Edit Event</h2>
         </div>
         <div class="row">
             
@@ -115,7 +114,7 @@
                 
                 <input type="submit" value="Cancel">
                 
-                <input type="submit" value="Submit">
+                <input type="submit" value="Edit Event Submit">
             </form>
             </div>
         </div>
