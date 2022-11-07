@@ -47,7 +47,7 @@
                             <img id="g-profile-img" class="img-fuid mb-3" width="80" height="80" alt="avatar" src="https://profiles.stanford.edu/proxy/api/cap/profiles/65672/resources/profilephoto/350x350.1509500008416.jpg">
                         </div>
                         <div class="mt-1 d-flex justify-content-center">
-                            <button class="btn btn-primary btn-sm mt-3"><a style="color:black" href="\Farmer\farmer_Profile">Profile Page</a></button>
+                            <button class="btn btn-primary btn-sm mt-3"><a style="color:white" href="\Farmer\farmer_Profile">Profile Page</a></button>
                         </div>
                         <div class="detail clearfix">
                             <ul class="list-group list-group-flush">
@@ -108,7 +108,7 @@
                         <div class="section-body">
                             <div class="dropdown mr-1">
                                 <button type="button" class="btn btn-sm btn-primary " id="dropdownMenuOffset" data-toggle="dropdown" data-offset="10,20">
-                                    Create New Event
+                                <a style="color:white" href="\Events\createEvent">Create New Event</a>
                                 </button>
                           
                             </div>
@@ -132,7 +132,7 @@
                                             </td>
                                             <td>22 October 2022</td>
                                             <td>
-                                                <a href=""><span class="g-action bi bi-pencil-fill"> </span></a>
+                                                <a href="\Events\editEvents"><span class="g-action fa fa-pencil"> </span></a>
                                                 <a href=""><span class="g-action fa fa-eye"></span></a>
                                                 <a href=""><span class="g-action fa fa-trash"></span></a>
                                             </td>
@@ -147,7 +147,7 @@
                                             </td>
                                             <td>10 November 2022</td>
                                             <td>
-                                                <a href=""><span class="g-action bi bi-pencil-fill"> </span></a>
+                                                <a href="\Events\editEvents"><span class="g-action fa fa-pencil"> </span></a>
                                                 <a href=""><span class="g-action fa fa-eye"></span></a>
                                                 <a href=""><span class="g-action fa fa-trash"></span></a>
                                             </td>
