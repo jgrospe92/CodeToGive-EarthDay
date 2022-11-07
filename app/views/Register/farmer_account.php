@@ -23,7 +23,7 @@
     <main class="container-fluid">
         <div class="wrapper">
             <!-- FORM STARTS -->
-            <form method="POST" action="" id="wizard">
+            <form method="POST" name="farmer" action="" id="wizard">
                 <!-- SECTION 1 -->
                 <h2></h2>
                 <section>
