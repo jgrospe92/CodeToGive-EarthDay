@@ -23,6 +23,7 @@ $(function(){
     $('.backward').click(function(){
         $("#wizard").steps('previous');
     })
+  
     // Select Dropdown
     $('html').click(function() {
         $('.select .dropdown').hide(); 

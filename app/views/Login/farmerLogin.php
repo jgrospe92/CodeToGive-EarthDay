@@ -45,7 +45,7 @@
                                             <input type="password" class="form-control" id="password" placeholder="Password">
                                         </div>
                                         <div class="d-flex flex-row align-items-center justify-content-between">
-                                            <a href="\Register\farmer">Register</a>
+                                            <a href="\Register\farmer_account">Register</a>
                                             <button class="btn btn-primary">Login</button>
                                         </div>
                                     </form>
