@@ -15,7 +15,7 @@
                     <a href="/Main/index">
                         <li>Home</li>
                     </a>
-                    <a href="#event">
+                    <a href="/Main/eventList">
                         <li>Event</li>
                     </a>
                     <a href="#">
@@ -24,7 +24,7 @@
                     <a href="#">
                         <li>Contact</li>
                     </a>
-                    <a href="#">
+                    <a href="\Login\gleaner">
                         <li>Login</li>
                     </a>
                 </ul>
