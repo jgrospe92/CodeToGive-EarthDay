@@ -40,7 +40,7 @@
                 <div class="col-lg-4 col-md-5 col-xs-12">
                     <div class="user-profile-box">
                         <div class="header clearfix d-flex flex-column align-items-center">
-                            <h2>FoodBank Name</h2>
+                            <h2 style="color:white"> Sunny Food Bank</h2>
                             <img id="g-profile-img" class="img-fuid mb-3" width="80" height="80" alt="avatar" src="/resources/images/food-bank-logo.png">
                         </div>
                         <div class="mt-1 d-flex justify-content-center">
@@ -143,7 +143,7 @@
                                                 <button type="button" class="btn btn-primary btn-sm" style="width: 6rem;">Farmer Page</button>
                                                 </div>
                                                  <div class="d-flex justify-content-center mb-2 ">
-                                                <button type="button" class="btn btn-primary btn-sm" style="width: 6rem;">delivery</button>
+                                                <button type="button" class="btn btn-primary btn-sm" style="width: 6rem;"><a style="color:white" href="\FoodBank\delivery">Delivery</a></button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -161,7 +161,7 @@
                                                 <button type="button" class="btn btn-primary btn-sm" style="width: 6rem;">Farmer Page</button>
                                                 </div>
                                                  <div class="d-flex justify-content-center mb-2">
-                                                <button type="button" class="btn btn-primary btn-sm" style="width: 6rem;">delivery</button>
+                                                <button type="button" class="btn btn-primary btn-sm" style="width: 6rem;"><a style="color:white" href="\FoodBank\delivery">Delivery</a></button>
                                                 </div>
                                             </td>
                                         </tr>
