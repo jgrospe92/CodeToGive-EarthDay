@@ -19,6 +19,7 @@ class Main extends \app\core\Controller {
       
     }
 
+    // saq's test functions to load pages
     public function gleaner_Profile_edit(){
         $this->view('Gleaner/gleaner_Profile_edit');
     }
@@ -45,5 +46,13 @@ class Main extends \app\core\Controller {
     }
     public function gleanerLogin(){ 
         $this->view('Login/gleanerLogin');
+    }
+
+    public function createEvents(){ 
+        $this->view('Events/createEvents');
+    }
+
+    public function gleanerRegister(){ 
+        $this->view('Register/gleanerRegister');
     }
 }

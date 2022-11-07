@@ -119,10 +119,6 @@
           </div>
         </div>
 
-
-
-
-       
       </div>
       <div class="col-lg-8">
         <div class="card mb-4">
@@ -245,7 +241,5 @@
         <?php $this->view('Layout/Footer'); ?>
         <?php $this->view('Layout/Scripts'); ?>
    
-
-
 </body>
 </html>
