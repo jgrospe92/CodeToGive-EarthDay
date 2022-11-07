@@ -1,20 +1,8 @@
-/*
- * Made by Erik Terwan
- * 24th of November 2015
- * MIT License
- *
- *
- * If you are thinking of using this in
- * production code, beware of the browser
- * prefixes.
- */
-
- 
  #menuToggle
  {
    display: block;
    position: relative;
-   top: 30px;
+   top: 20px;
    left: 50px;
    
    z-index: 1;
@@ -126,7 +114,6 @@
    margin: -100px 0 0 -50px;
    padding: 50px;
    padding-top: 125px;
-   opacity: 0.6;
    background: #ededed;
    list-style-type: none;
    -webkit-font-smoothing: antialiased;
@@ -144,10 +131,6 @@
    font-size: 22px;
  }
 
- #menu a:hover {
-    color: red;
- }
- 
  /*
   * And let's slide it in from the left
   */
